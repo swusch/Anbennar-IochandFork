@@ -10,6 +10,14 @@ country_event = {
 		name = iochand.1.a
 		ai_chance = { factor = 100 }
 		
+		A06 = {
+			country_event = {
+				id = iochand.2
+			}
+			days = 1
+		}
+		add_dip_power = -50
+
 	}
 	option = { #No help needed
 		name = iochand.1.b
@@ -26,17 +34,15 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { #Buy Southroy
+	option = { #Nimscodd joins the war
 		name = iochand.2.a
-		174 = { cede_province = A80 }
-		add_dip_power = -100
-		add_treasury = -100
-		hidden_effect = {
-			country_event = {
-				id = iochand.3
-				days = 900
-			}
-		}
+		join_all_offensive_wars_of = A19
+		create_alliance = A19
+	}
+	option = { #Nimscodd doesnt join the war
+		name = iochand.2.b
+		ai_chance = { factor = 0 }	
+		
 	}
 }
 country_event = {
@@ -47,14 +53,14 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { #Buy Thunderward
+	option = { #Buy Southroy
 		name = iochand.3.a
-		123 = { cede_province = A80 }
+		128 = { cede_province = A80 }
 		add_dip_power = -100
 		add_treasury = -100
 		hidden_effect = {
 			country_event = {
-				id = iochand.4
+				id = iochand.3
 				days = 900
 			}
 		}
@@ -68,14 +74,14 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { #Buy Haysfield
+	option = { #Buy Thunderward
 		name = iochand.4.a
-		125 = { cede_province = A80 }
+		123 = { cede_province = A80 }
 		add_dip_power = -100
 		add_treasury = -100
 		hidden_effect = {
 			country_event = {
-				id = iochand.5
+				id = iochand.4
 				days = 900
 			}
 		}
@@ -89,8 +95,29 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { #Buy Sildthol
+	option = { #Buy Haysfield
 		name = iochand.5.a
+		125 = { cede_province = A80 }
+		add_dip_power = -100
+		add_treasury = -100
+		hidden_effect = {
+			country_event = {
+				id = iochand.5
+				days = 900
+			}
+		}
+	}
+}
+country_event = {
+	id = iochand.6
+	title = iochand.6.t 
+	desc = iochand.6.d
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Buy Sildthol
+		name = iochand.6.a
 		124 = { cede_province = A80 }
 		add_dip_power = -100
 		add_treasury = -100

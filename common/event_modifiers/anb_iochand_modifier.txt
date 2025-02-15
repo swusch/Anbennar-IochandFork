@@ -46,3 +46,6 @@ iochand_silk_trading_hub = {
 	trade_goods_size = 1
 	trade_value_modifier = 0.25
 }
+iochand_academy_programme_funds = {
+	all_power_cost = 0.05
+}

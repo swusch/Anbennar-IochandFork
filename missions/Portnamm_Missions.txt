@@ -72,7 +72,7 @@ portnamm_3 = {
 
 		effect = {  
 			country_event = {
-				id = portnamm.1
+				id = iochand.1
 			}
 		} 
 	}

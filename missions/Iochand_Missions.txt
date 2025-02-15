@@ -583,7 +583,8 @@ iochand_3 = {
 		trigger = {  
 			126 = {
 				total_development = 25
-				num_of_times_expanded_infrastructure = 1
+				has_tax_building_trigger = yes
+				has_trade_building_trigger = yes
 			}
 		} 
 
@@ -606,7 +607,7 @@ iochand_3 = {
 		trigger = {  
 			126 = {
 				total_development = 30
-				num_of_times_expanded_infrastructure = 2
+				has_production_building_trigger = yes
 			}
 			treasury = 200
 		} 
@@ -732,9 +733,8 @@ iochand_4 = {
 
 		trigger = {  
 			A01 = {
-				has_opinion_modifier = {
+				has_opinion = {
 					who = A80
-					modifier = improved_relation
 					value = 100
 				}
 			}
@@ -744,7 +744,7 @@ iochand_4 = {
 
 		effect = {  
 			country_event = {
-				id = iochand.2
+				id = iochand.3
 			}
 		} 
 	}
@@ -793,7 +793,11 @@ iochand_4 = {
 		}
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			num_artifice_inventions_discovered = {
+				VAL = 15
+			}
+		} 
 
 		effect = {  } 
 	}
