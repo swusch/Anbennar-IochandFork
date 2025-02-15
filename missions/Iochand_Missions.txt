@@ -703,7 +703,7 @@ iochand_3 = {
 
 		trigger = {  
 			126 = {
-				total_development = 35
+				development = 35
 				has_production_building_trigger = yes
 				has_manpower_building_trigger = yes
 			}
@@ -1203,14 +1203,14 @@ iochand_5 = {
 					type = all
 					owned_by = root
 					has_building = workshop
-					total_development = 25
+					development = 25
 					num_of_times_expanded_infrastructure = 1
 				}
 				sorncoast_vines_area = {
 					type = all
 					owned_by = root
 					has_building = workshop
-					total_development = 25
+					development = 25
 					num_of_times_expanded_infrastructure = 1
 				}
 			} 
