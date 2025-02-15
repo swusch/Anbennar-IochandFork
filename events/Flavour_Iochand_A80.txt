@@ -38,6 +38,10 @@ country_event = {
 		name = iochand.2.a
 		join_all_offensive_wars_of = A19
 		create_alliance = A19
+		add_historical_friend = A19
+		A19 = {
+			add_historical_friend = A80
+		}
 	}
 	option = { #Nimscodd doesnt join the war
 		name = iochand.2.b
