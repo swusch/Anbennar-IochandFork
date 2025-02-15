@@ -218,6 +218,79 @@ update_artifice_points = {
 				which = ArtificePointsDamestear
 			}
 
+			#iochand double damestear trading bonus
+
+			if = {
+				limit = {
+					trading_part = {
+						trade_goods = damestear
+						value = 0.1
+					}
+					has_country_flag = iochand_double_damestear_bonus
+				}
+				change_variable = {
+					which = ArtificePointsDamestear
+					value = 10
+				}
+			}
+			else_if = {
+				limit = {
+					trading_part = {
+						trade_goods = damestear
+						value = 0.075
+					}
+					has_country_flag = iochand_double_damestear_bonus
+				}
+				change_variable = {
+					which = ArtificePointsDamestear
+					value = 7
+				}
+			}
+			else_if = {
+				limit = {
+					trading_part = {
+						trade_goods = damestear
+						value = 0.05
+					}
+					has_country_flag = iochand_double_damestear_bonus
+				}
+				change_variable = {
+					which = ArtificePointsDamestear
+					value = 5
+				}
+			}
+			else_if = {
+				limit = {
+					trading_part = {
+						trade_goods = damestear
+						value = 0.025
+					}
+					has_country_flag = iochand_double_damestear_bonus
+				}
+				change_variable = {
+					which = ArtificePointsDamestear
+					value = 2
+				}
+			}
+			else_if = {
+				limit = {
+					trading_part = {
+						trade_goods = damestear
+						value = 0.01
+					}
+					has_country_flag = iochand_double_damestear_bonus
+				}
+				change_variable = {
+					which = ArtificePointsDamestear
+					value = 1
+				}
+			}
+
+			change_variable = {
+				which = MaxArtificePoints
+				which = ArtificePointsDamestear
+			}
+
 			#dwarovar artifice dungeon
 			if = {
 				limit = {

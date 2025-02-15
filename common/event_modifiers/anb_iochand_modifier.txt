@@ -52,3 +52,14 @@ iochand_academy_programme_funds = {
 iochand_debts_collected = {
 	province_trade_power_value = 10
 }
+iochand_raise_mercenary_pay_reward = {
+	is_mercenary_modifier = yes
+	land_morale = 0.1
+}
+iochand_raise_mercenary_pay = {
+	local_production_efficiency = -0.25
+	local_tax_modifier = -0.25
+}
+iochand_halflings_integrated = {
+	num_accepted_cultures = 3
+}
