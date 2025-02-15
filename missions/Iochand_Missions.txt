@@ -1099,17 +1099,11 @@ iochand_5 = {
 		trigger = {  
 			custom_trigger_tooltip = {
 				tooltip = iochand_lencenor_new_trade_trigger_tt
-				all_owned_province = {
-					OR = {
-						NOT = {
-							region = lencenor_region
-						}
-						AND = {
-							region = lencenor_region
-							has_trade_building_trigger = yes
-							num_of_times_improved = 5
-						}
-					}
+				num_of_provinces_owned_or_owned_by_subjects_with = {
+					value = 1
+					region = lencenor_region
+					has_trade_building_trigger = yes
+					num_of_times_improved = 5
 				}
 			}
 		} 
@@ -1118,6 +1112,19 @@ iochand_5 = {
 			custom_tooltip = iochand_lencenor_new_trade_effect_tt
 			tooltip = {
 				capital_scope = {
+					add_province_modifier = {
+						name = iochand_lencenor_new_trade
+						duration = -1
+					}
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_trade_building_trigger = yes
+						num_of_times_improved = 5
+						region = dragon_coast_region
+					}
 					add_province_modifier = {
 						name = iochand_lencenor_new_trade
 						duration = -1

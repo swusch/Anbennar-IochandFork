@@ -148,7 +148,7 @@ country_event = {
 			set_country_flag = unlocked_artifice_invention_iochand_merc_2
 			add_country_modifier = {
 				name = iochand_academy_programme_funds
-				duration = 7300
+				duration = 3650
 			}
 		}
 		else = {
@@ -156,7 +156,7 @@ country_event = {
 			set_country_flag = unlocked_artifice_invention_iochand_merc_1
 			add_country_modifier = {
 				name = iochand_academy_programme_funds
-				duration = 7300
+				duration = 3650
 			}
 		}
 	}
@@ -175,7 +175,7 @@ country_event = {
 		set_country_flag = unlocked_artifice_invention_iochand_merc_3
 		add_country_modifier = {
 			name = iochand_academy_programme_funds
-			duration = 7300
+			duration = 3650
 		}
 	}
 }
