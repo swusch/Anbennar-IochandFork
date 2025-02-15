@@ -1,0 +1,48 @@
+iochand_overlord = {
+	liberty_desire = -50
+}
+
+iochand_dragon_coast_reclaimed = {
+	diplomatic_reputation = 3
+	diplomatic_annexation_cost = -0.25
+}
+dragonspine_mining = {
+	trade_goods_size_modifier = 0.25
+}
+iochand_dragon_coast_grain = {
+	regiment_recruit_speed = -0.25
+	trade_goods_size = 0.5
+}
+iochand_dragon_coast_silk = {
+	province_trade_power_modifier = 0.2
+	trade_goods_size_modifier = 0.2
+}
+iochand_damestear_exploit = {
+	trade_value_modifier = 0.2
+}
+iochand_heartland_restored = {
+	local_development_cost = -0.1
+	local_build_cost = -0.1
+}
+iochand_greatcity_portnamm = {
+	local_development_cost = -0.25
+	local_build_cost = -0.25
+	province_trade_power_modifier = 0.5
+}
+iochand_jewel = {
+	monthly_splendor = 1
+}
+iochand_push_into_westport = {
+	trade_efficiency = 0.15
+}
+iochand_lencenor_new_trade = {
+	province_trade_power_value = 5
+}
+iochand_trade_monopoly = {
+	merchants = 1
+	global_trade_power = 0.1
+}
+iochand_silk_trading_hub = {
+	trade_goods_size = 1
+	trade_value_modifier = 0.25
+}

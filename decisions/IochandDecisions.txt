@@ -1,0 +1,254 @@
+country_decisions = {
+	refill_tadlouds_decision = {
+		
+		potential = {
+			tag = A80
+		}
+	
+		allow = {
+			hidden_trigger = {
+				OR = {
+					tag = A19
+					tag = A80
+				}
+			}
+			years_of_manpower = 1
+			OR = {
+				any_hired_mercenary_company = { template = merc_tadlouds_1 }
+				any_hired_mercenary_company = { template = merc_tadlouds_2 }
+				any_hired_mercenary_company = { template = merc_tadlouds_3 }
+			}
+		}
+		effect = {
+			if = {
+				limit = {any_hired_mercenary_company = { template = merc_tadlouds_3 }}
+				random_hired_mercenary_company = {
+					template = { template = merc_tadlouds_3 }
+					add_company_manpower = 0.15
+				}
+				add_yearly_manpower = -1
+			}
+			else_if = {
+				limit = {any_hired_mercenary_company = { template = merc_tadlouds_2 }}
+				random_hired_mercenary_company = {
+					template = { template = merc_tadlouds_2 }
+					add_company_manpower = 0.15
+				}
+				add_yearly_manpower = -1
+			}
+			else_if = {
+				limit = {any_hired_mercenary_company = { template = merc_tadlouds_1 }}
+				random_hired_mercenary_company = {
+					template = { template = merc_tadlouds_1 }
+					add_company_manpower = 0.15
+				}
+				add_yearly_manpower = -1
+			}
+
+		}
+	}
+
+	academy_fund_increase_1 = {
+		potential = {
+			tag = A80
+			has_country_flag = portnamm_academy_1
+		}
+		allow = {
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
+			mil_tech = 6
+		}
+		effect = {
+			add_adm_power = -100
+			add_dip_power = -100
+			add_mil_power = -100
+			random_hired_mercenary_company = {
+				limit = { template = merc_artificer_1_1 }
+				disband_mercenary_company = THIS
+			}
+			clr_country_flag = portnamm_academy_1
+			set_country_flag = portnamm_academy_2
+		}
+	}
+
+	academy_fund_increase_2 = {
+		potential = {
+			tag = A80
+			has_country_flag = portnamm_academy_2
+		}
+		allow = {
+			adm_power = 125
+			dip_power = 125
+			mil_power = 125
+			mil_tech = 11
+		}
+		effect = {
+			add_adm_power = -125
+			add_dip_power = -125
+			add_mil_power = -125
+			random_hired_mercenary_company = {
+				limit = { template = merc_artificer_2_1 }
+				disband_mercenary_company = THIS
+			}
+			random_hired_mercenary_company = {
+				limit = { template = merc_artificer_2_2 }
+				disband_mercenary_company = THIS
+			}
+			clr_country_flag = portnamm_academy_2
+			set_country_flag = portnamm_academy_3
+		}
+	}
+
+	academy_fund_increase_3 = {
+		potential = {
+			tag = A80
+			has_country_flag = portnamm_academy_3
+		}
+		allow = {
+			adm_power = 150
+			dip_power = 150
+			mil_power = 150
+			mil_tech = 16
+		}
+		effect = {
+			add_adm_power = -150
+			add_dip_power = -150
+			add_mil_power = -150
+			random_hired_mercenary_company = {
+				template ={ template = merc_artificer_3_1 }
+				disband_mercenary_company = THIS
+			}
+			random_hired_mercenary_company = {
+				template ={ template = merc_artificer_3_3 }
+				disband_mercenary_company = THIS
+			}
+			random_hired_mercenary_company = {
+				template ={ template = merc_artificer_3_3 }
+				disband_mercenary_company = THIS
+			}
+			clr_country_flag = portnamm_academy_3
+			set_country_flag = portnamm_academy_4
+		}
+	}
+
+	academy_fund_increase_4 = {
+		potential = {
+			tag = A80
+			has_country_flag = portnamm_academy_4
+		}
+		allow = {
+			adm_power = 175
+			dip_power = 175
+			mil_power = 175
+			mil_tech = 18
+		}
+		effect = {
+			add_adm_power = -175
+			add_dip_power = -175
+			add_mil_power = -175
+			random_hired_mercenary_company = {
+				template ={ template = merc_artificer_4_1 }
+				disband_mercenary_company = THIS
+			}
+			random_hired_mercenary_company = {
+				template ={ template = merc_artificer_4_2 }
+				disband_mercenary_company = THIS
+			}
+			random_hired_mercenary_company = {
+				template ={ template = merc_artificer_4_3 }
+				disband_mercenary_company = THIS
+			}
+			random_hired_mercenary_company = {
+				template ={ template = merc_artificer_4_4 }
+				disband_mercenary_company = THIS
+			}
+			clr_country_flag = portnamm_academy_4
+			set_country_flag = portnamm_academy_5
+		}	
+	}
+
+	academy_fund_increase_5 = {
+		potential = {
+			tag = A80
+			has_country_flag = portnamm_academy_5
+		}
+		allow = {
+			adm_power = 200
+			dip_power = 200
+			mil_power = 200
+			mil_tech = 20
+		}
+		effect = {
+			add_adm_power = -200
+			add_dip_power = -200
+			add_mil_power = -200
+			random_hired_mercenary_company = {
+				template ={ template = merc_artificer_5_1 }
+				disband_mercenary_company = THIS
+			}
+			random_hired_mercenary_company = {
+				template ={ template = merc_artificer_5_2 }
+				disband_mercenary_company = THIS
+			}
+			random_hired_mercenary_company = {
+				template ={ template = merc_artificer_5_3 }
+				disband_mercenary_company = THIS
+			}
+			random_hired_mercenary_company = {
+				template ={ template = merc_artificer_5_4 }
+				disband_mercenary_company = THIS
+			}
+			random_hired_mercenary_company = {
+				template ={ template = merc_artificer_5_5 }
+				disband_mercenary_company = THIS
+			}
+			clr_country_flag = portnamm_academy_5
+			set_country_flag = portnamm_academy_6
+		}
+	}
+
+	academy_fund_increase_5 = {
+		potential = {
+			tag = A80
+			has_country_flag = portnamm_academy_5
+		}
+		allow = {
+			adm_power = 250
+			dip_power = 250
+			mil_power = 250
+			mil_tech = 22
+		}
+		effect = {
+			add_adm_power = -250
+			add_dip_power = -250
+			add_mil_power = -250
+			random_hired_mercenary_company = {
+				template ={ template = merc_artificer_6_1 }
+				disband_mercenary_company = THIS
+			}
+			random_hired_mercenary_company = {
+				template ={ template = merc_artificer_6_2 }
+				disband_mercenary_company = THIS
+			}
+			random_hired_mercenary_company = {
+				template ={ template = merc_artificer_6_3 }
+				disband_mercenary_company = THIS
+			}
+			random_hired_mercenary_company = {
+				template ={ template = merc_artificer_6_4 }
+				disband_mercenary_company = THIS
+			}
+			random_hired_mercenary_company = {
+				template ={ template = merc_artificer_6_5 }
+				disband_mercenary_company = THIS
+			}
+			random_hired_mercenary_company = {
+				template ={ template = merc_artificer_6_6 }
+				disband_mercenary_company = THIS
+			}
+			clr_country_flag = portnamm_academy_5
+			set_country_flag = portnamm_academy_6
+		}
+	}
+}

@@ -1,0 +1,46 @@
+country_event = {
+	id = portnamm.1
+	title = portnamm.1.t 
+	desc = portnamm.1.d
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Declare Reveria and call in Nimscodd
+		name = portnamm.1.a
+		ai_chance = { factor = 100 }
+		
+		A06 = {
+			country_event = {
+				id = portnamm.2
+			}
+			days = 1
+		}
+		add_dip_power = -50
+
+	}
+	option = { #No help needed
+		name = portnamm.1.b
+		ai_chance = { factor = 0 }	
+		
+		
+	}
+}
+country_event = {
+	id = portnamm.2
+	title = portnamm.2.t 
+	desc = portnamm.2.d
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Nimscodd joins the war
+		join_all_offensive_wars_of = A19
+		create_alliance = A19
+	}
+	option = { #Nimscodd doesnt join the war
+		name = portnamm.2.b
+		ai_chance = { factor = 0 }	
+		
+	}
+}
