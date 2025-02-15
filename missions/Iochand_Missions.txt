@@ -601,9 +601,20 @@ iochand_2 = {
 		}
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			small_country_region = {
+				type = all
+				owned_by = root
+				is_core = root
+			}
+		} 
 
-		effect = {  } 
+		effect = {  
+			add_country_modifier = {
+				name = iochand_supramecy_over_small_country
+				duration = -1
+			}
+		} 
 	}
 }
 iochand_3 = {
@@ -677,10 +688,10 @@ iochand_3 = {
 		effect = {  
 			add_treasury = -200
 			custom_tooltip = iochand_the_great_plays_of_cannor_tt
-			country_event = {
-				id = iochand.1
-				days = 730
-			}
+			#country_event = {
+			#	id = iochand.1
+			#	days = 730
+			#}
 		} 
 	}
 
@@ -1094,7 +1105,7 @@ iochand_5 = {
 							region = lencenor_region
 						}
 						AND = {
-							region = dragon_coast_region
+							region = lencenor_region
 							has_trade_building_trigger = yes
 							num_of_times_improved = 5
 						}

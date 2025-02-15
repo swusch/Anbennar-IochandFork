@@ -63,3 +63,6 @@ iochand_raise_mercenary_pay = {
 iochand_halflings_integrated = {
 	num_accepted_cultures = 3
 }
+iochand_supramecy_over_small_country = {
+	governing_capacity_modifier = 0.15
+}
