@@ -2142,6 +2142,7 @@ merc_tadlouds_2 = {
 			tag = A19
 			tag = A80
 		}
+		has_country_flag = unlocked_merc_tadlouds_2
 		NOT = { has_country_flag = unlocked_merc_tadlouds_3 }
 	}
 	cost_modifier = 0.75
@@ -2165,6 +2166,8 @@ merc_tadlouds_3 = {
 			tag = A19
 			tag = A80
 		}
+		has_country_flag = unlocked_merc_tadlouds_3
+
 	}
 	cost_modifier = 0.75
 	modifier = {

@@ -22,10 +22,7 @@ iochand_1 = {
 			add_treasury = -200
 			add_mil_power = -50
 			vassalize = A06
-			add_historical_friend = A06
-			A06 = {
-				add_historical_friend = A80
-			}
+			
 			hidden_effect = {
 				A06 = {
 					add_country_modifier = {
@@ -582,9 +579,10 @@ iochand_3 = {
 
 		trigger = {  
 			126 = {
-				total_development = 25
+				development = 25
 				has_tax_building_trigger = yes
 				has_trade_building_trigger = yes
+				num_of_times_expanded_infrastructure = 1
 			}
 		} 
 
@@ -606,8 +604,9 @@ iochand_3 = {
 
 		trigger = {  
 			126 = {
-				total_development = 30
+				development = 30
 				has_production_building_trigger = yes
+				num_of_times_expanded_infrastructure = 2
 			}
 			treasury = 200
 		} 
