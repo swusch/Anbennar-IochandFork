@@ -7,20 +7,12 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { #Declare Reveria and call in Nimscodd
-		name = portnamm.1.a
+		name = iochand.1.a
 		ai_chance = { factor = 100 }
 		
-		A06 = {
-			country_event = {
-				id = portnamm.2
-			}
-			days = 1
-		}
-		add_dip_power = -50
-
 	}
 	option = { #No help needed
-		name = portnamm.1.b
+		name = iochand.1.b
 		ai_chance = { factor = 0 }	
 		
 		
@@ -35,7 +27,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { #Buy Southroy
-		name = portnamm.2.a
+		name = iochand.2.a
 		174 = { cede_province = A80 }
 		add_dip_power = -100
 		add_treasury = -100
@@ -56,7 +48,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { #Buy Thunderward
-		name = portnamm.3.a
+		name = iochand.3.a
 		123 = { cede_province = A80 }
 		add_dip_power = -100
 		add_treasury = -100
@@ -77,7 +69,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { #Buy Haysfield
-		name = portnamm.4.a
+		name = iochand.4.a
 		125 = { cede_province = A80 }
 		add_dip_power = -100
 		add_treasury = -100
@@ -98,7 +90,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { #Buy Sildthol
-		name = portnamm.5.a
+		name = iochand.5.a
 		124 = { cede_province = A80 }
 		add_dip_power = -100
 		add_treasury = -100
