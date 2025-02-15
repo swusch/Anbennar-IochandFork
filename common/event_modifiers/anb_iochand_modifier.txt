@@ -49,3 +49,6 @@ iochand_silk_trading_hub = {
 iochand_academy_programme_funds = {
 	all_power_cost = 0.05
 }
+iochand_debts_collected = {
+	province_trade_power_value = 10
+}

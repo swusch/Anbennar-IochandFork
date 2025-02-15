@@ -116,3 +116,4 @@ iochand_lencenor_new_trade_trigger_tt:0 "At least one province in §YLencenor§!
 iochand_lencenor_new_trade_effect_tt:0 "All owned provinces in §YLencenor§! with a §YMarketplace§! and improved §YDevelopment§! by §Y5§! get:"
 iochand_westport_costumes_trigger_tt:0 "All province in the §YShrouded Coast§! area and the §YSorncoast Vines§! area must have a §YWorkshop§!, have their §YInfrastructure§! expanded, and have §Y25§! or more §YTotal Development§!."
 iochand_westport_costumes_effect_tt:0 "All province in the §YShrouded Coast§! area and the §YSorncoast Vines§! area will get:"
+iochand_beepeck_depts_collected_effect_tt:0 "All owned provinces in §YBeepeck§! with a §YFort§! get:"

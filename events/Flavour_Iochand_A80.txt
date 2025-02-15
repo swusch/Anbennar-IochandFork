@@ -132,3 +132,50 @@ country_event = {
 		add_treasury = -100
 	}
 }
+country_event = {
+	id = iochand.7
+	title = iochand.7.t 
+	desc = iochand.7.d
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #unlock unique invention t1/2
+		name = iochand.7.a
+		if = {
+			limit = { has_country_flag = unlocked_artifice_invention_iochand_merc_1 }^
+			custom_tooltip = iochand_unlocked_unique_invention_t2_tt
+			set_country_flag = unlocked_artifice_invention_iochand_merc_2
+			add_country_modifier = {
+				name = iochand_academy_programme_funds
+				duration = 7300
+			}
+		}
+		else = {
+			custom_tooltip = iochand_unlocked_unique_invention_t1_tt
+			set_country_flag = unlocked_artifice_invention_iochand_merc_1
+			add_country_modifier = {
+				name = iochand_academy_programme_funds
+				duration = 7300
+			}
+		}
+	}
+}
+country_event = {
+	id = iochand.8
+	title = iochand.8.t 
+	desc = iochand.8.d
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #unlock unique invention t1/2
+		name = iochand.8.a
+		custom_tooltip = iochand_unlocked_unique_invention_t3_tt
+		set_country_flag = unlocked_artifice_invention_iochand_merc_3
+		add_country_modifier = {
+			name = iochand_academy_programme_funds
+			duration = 7300
+		}
+	}
+}
