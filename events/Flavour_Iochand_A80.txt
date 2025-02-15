@@ -22,7 +22,12 @@ country_event = {
 	option = { #No help needed
 		name = iochand.1.b
 		ai_chance = { factor = 0 }	
-		
+
+		create_alliance = A06
+		add_historical_friend = A06
+		A06 = {
+			add_historical_friend = A19
+		}
 		
 	}
 }
@@ -34,7 +39,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { #Nimscodd joins the war
+	option = { 
 		name = iochand.2.a
 		join_all_offensive_wars_of = A19
 		create_alliance = A19
@@ -43,7 +48,7 @@ country_event = {
 			add_historical_friend = A80
 		}
 	}
-	option = { #Nimscodd doesnt join the war
+	option = { 
 		name = iochand.2.b
 		ai_chance = { factor = 0 }	
 		
@@ -64,7 +69,7 @@ country_event = {
 		add_treasury = -100
 		hidden_effect = {
 			country_event = {
-				id = iochand.3
+				id = iochand.4
 				days = 900
 			}
 		}
@@ -85,7 +90,7 @@ country_event = {
 		add_treasury = -100
 		hidden_effect = {
 			country_event = {
-				id = iochand.4
+				id = iochand.5
 				days = 900
 			}
 		}
@@ -106,7 +111,7 @@ country_event = {
 		add_treasury = -100
 		hidden_effect = {
 			country_event = {
-				id = iochand.5
+				id = iochand.6
 				days = 900
 			}
 		}
