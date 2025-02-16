@@ -17,6 +17,9 @@ iochand_1 = {
 			treasury = 200
 			mil_power = 50
 			is_at_war = no
+			A06 = {
+				is_at_war = no
+			}
 		} 
 
 		effect = {  
