@@ -80,4 +80,5 @@ iochand_gnomish_human_unionocracy = {
 }
 invaded_iochand = {
 	opinion = -100
+	yearly_decay = 10
 }

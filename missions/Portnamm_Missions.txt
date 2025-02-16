@@ -44,7 +44,7 @@ portnamm_2 = {
 				duration = 3650
 			}
 			country_event = {
-				id = portnamm.1
+				id = portnamm.10
 			}
 
 		} 
