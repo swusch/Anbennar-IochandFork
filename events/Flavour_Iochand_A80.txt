@@ -74,6 +74,9 @@ country_event = {
 			}
 			add_permanent_claim = ROOT
 		}
+		hidden_effect = {
+			128 = { add_core = A80 }
+		}
 	}
 }
 country_event = {
