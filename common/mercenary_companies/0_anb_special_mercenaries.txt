@@ -2136,6 +2136,7 @@ merc_tadlouds_1 = {
 merc_tadlouds_2 = {
     regiments_per_development = 0.01
 	cavalry_weight = 0
+	artillery_weight = 0.33
 	cavalry_cap = 0
 	home_province = 126
 	sprites = { westerngfx_sprite_pack }
@@ -2153,8 +2154,8 @@ merc_tadlouds_2 = {
 		infantry_power = 0.15
 		artillery_fire = 0.25
 	}
-	min_size = 26
-	max_size = 26
+	min_size = 30
+	max_size = 30
 }
 
 #Portnamm/Iochand The Tadlouds T3

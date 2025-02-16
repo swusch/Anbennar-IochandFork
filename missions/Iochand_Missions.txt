@@ -217,6 +217,7 @@ iochand_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			set_country_flag = iochand_pushout_kobolds_done
 		} 
 	}
 
@@ -1043,9 +1044,11 @@ iochand_5 = {
 				owned_by = root
 				is_core = root
 			}
-			NOT = {
-				has_mission = A80_pushout_the_kobolds
+			custom_trigger_tooltip = {
+				tooltip = iochand_pushout_kobolds_done_tt
+				has_country_flag = iochand_pushout_kobolds_done
 			}
+
 		} 
 
 		effect = {  

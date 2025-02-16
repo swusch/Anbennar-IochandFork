@@ -119,3 +119,4 @@ iochand_westport_costumes_effect_tt:0 "All province in the §YShrouded Coast§! 
 iochand_beepeck_depts_collected_effect_tt:0 "All owned provinces in §YBeepeck§! with a §YFort§! get:"
 iochand_raise_mercenary_pay_trigger_tt:0 "All §Ygrain§! provinces in the §YSmall Country§! region currently owned by §YIochand§! must contain a §YRegimental Camp§!, a §YFarm estate§!, and have §Y25§! or more §YTotal Development§!."
 iochand_raise_mercenary_pay_effect_tt:0 "All owned provinces in the §YSmall Country§! region with §YGrain§! get:"
+iochand_pushout_kobolds_done_tt:0 "Mission §YPushout the Kobolds§! completed"
