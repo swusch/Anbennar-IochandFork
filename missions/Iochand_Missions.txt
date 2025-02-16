@@ -187,7 +187,7 @@ iochand_1 = {
 			}
 			add_country_modifier = {
 				name = iochand_dragon_coast_reclaimed
-				duration = 7300
+				duration = 9125
 			}
 			westmoor_proper_area = {
 				limit = {
