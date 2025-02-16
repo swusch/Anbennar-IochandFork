@@ -723,6 +723,10 @@ iochand_3 = {
 		effect = {  
 			custom_tooltip = iochand_unlocked_artificer_academy_tt
 			custom_tooltip = unlocked_merc_tadlouds_2_tt
+			add_country_modifier = {
+				name = iochand_remove_artificer_units
+				duration = -1
+			}
 			hidden_effect = {
 				set_country_flag = portnamm_academy_1
 				set_country_flag = unlocked_merc_tadlouds_2
@@ -971,7 +975,7 @@ iochand_4 = {
 		trigger = {  
 			stability = 1
 			num_artifice_inventions_discovered = {
-				VAL = 15
+				VAL = 25
 			}
 		} 
 
