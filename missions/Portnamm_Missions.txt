@@ -120,6 +120,13 @@ portnamm_3 = {
 					id = iochand.100
 					days = 3
 				}
+				add_accepted_culture_or_dip_power = {
+					culture = iochander
+				}
+				add_country_modifier = {
+					name = iochand_gnomish_human_unionocracy
+					duration = -1
+				}
 			}
 		}
 	}

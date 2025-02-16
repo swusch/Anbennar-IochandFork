@@ -3,8 +3,7 @@ iochand_overlord = {
 }
 
 iochand_dragon_coast_reclaimed = {
-	diplomatic_reputation = 3
-	diplomatic_annexation_cost = -0.25
+	diplomatic_reputation = 1
 }
 dragonspine_mining = {
 	trade_goods_size_modifier = 0.25
@@ -75,4 +74,7 @@ iochand_starting_disaster = {
 }
 iochand_remove_artificer_units = {
 	special_unit_forcelimit = -1
+}
+iochand_gnomish_human_unionocracy = {
+	num_accepted_cultures = 1
 }
