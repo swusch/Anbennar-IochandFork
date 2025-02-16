@@ -78,3 +78,6 @@ iochand_remove_artificer_units = {
 iochand_gnomish_human_unionocracy = {
 	num_accepted_cultures = 1
 }
+invaded_iochand = {
+	opinion = -100
+}
