@@ -33,9 +33,10 @@ country_event = {
 		ai_chance = { factor = 100 }	
 		every_country = {
 				limit = {
-				religion = regent_court
+					religion = regent_court
+				}
 				add_opinion = {
-					who = root
+					who = A05
 					modifier = invaded_iochand
 				}
 			}

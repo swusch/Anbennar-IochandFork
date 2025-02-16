@@ -140,7 +140,7 @@ country_event = {
             name = "iochand.100.a"
             add_country_modifier = {
                 name = iochand_starting_disaster
-                duration = 3650
+                duration = 5475
             }
 			hidden_effect = {
 				add_historical_friend = A06
