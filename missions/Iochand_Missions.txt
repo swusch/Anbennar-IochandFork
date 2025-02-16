@@ -6,12 +6,11 @@ iochand_1 = {
 	potential = { tag = A80 } 
 
 	A80_arming_nimscodd = {
-		icon = mission_placeholder
+		icon = mission_guns_of_urban
 		position = 2
 		required_missions = { A80_crushing_the_reavers } 
 		provinces_to_highlight = {  
 		} 
-
 		trigger = {  
 			alliance_with = A06
 			treasury = 200
@@ -45,7 +44,7 @@ iochand_1 = {
 	}
 
 	A80_hostile_takeover = {
-		icon = mission_placeholder
+		icon = mission_end_the_sound_toll
 		position = 3
 		required_missions = { A80_arming_nimscodd } 
 		provinces_to_highlight = {  } 
@@ -96,7 +95,7 @@ iochand_1 = {
 	}
 
 	A80_reclaim_the_coastline = {
-		icon = mission_placeholder
+		icon = mission_swedish_military_advise
 		position = 4
 		required_missions = { A80_hostile_takeover } 
 		provinces_to_highlight = {  
@@ -156,7 +155,7 @@ iochand_1 = {
 	}
 
 	A80_pushout_the_kobolds = {
-		icon = mission_placeholder
+		icon = mission_strengthen_the_vegvar
 		position = 5
 		required_missions = { A80_reclaim_the_coastline } 
 		provinces_to_highlight = {  } 
@@ -221,7 +220,7 @@ iochand_1 = {
 	}
 
 	A80_mine_the_spine = {
-		icon = mission_placeholder
+		icon = mission_iron_and_copper
 		position = 6
 		required_missions = { A80_pushout_the_kobolds } 
 		provinces_to_highlight = {  } 
@@ -266,7 +265,7 @@ iochand_1 = {
 	}
 
 	A80_gold_in_norbit = {
-		icon = mission_placeholder
+		icon = mission_zambezi_gold
 		position = 7
 		required_missions = { A80_mine_the_spine } 
 		provinces_to_highlight = {  } 
@@ -290,7 +289,7 @@ iochand_1 = {
 	}
 
 	A80_the_feast = {
-		icon = mission_placeholder
+		icon = feast_of_pheasants
 		position = 8
 		required_missions = {
 			A80_gold_in_norbit
@@ -348,7 +347,7 @@ iochand_1 = {
 	}
 
 	A80_integrate_the_halflings = {
-		icon = mission_placeholder
+		icon = prosperity_for_all
 		position = 9
 		required_missions = { A80_debts_collected } 
 		provinces_to_highlight = {  } 
@@ -379,7 +378,7 @@ iochand_2 = {
 	potential = { tag = A80 } 
 
 	A80_crushing_the_reavers = {
-		icon = mission_placeholder
+		icon = mission_disrupt_portuguese_trade
 		position = 1
 		provinces_to_highlight = {  } 
 
@@ -390,7 +389,6 @@ iochand_2 = {
 				is_core = ROOT
 			}
 		} 
-
 		effect = {  
 			reaver_coast_area = {
 				change_culture = iochander
@@ -399,7 +397,7 @@ iochand_2 = {
 	}
 
 	A80_exploit_baycodds = {
-		icon = mission_placeholder
+		icon = mission_sw_torquoise_mining
 		position = 4
 		required_missions = { A80_hostile_takeover } 
 		provinces_to_highlight = {  } 
@@ -424,7 +422,7 @@ iochand_2 = {
 	}
 
 	A80_nimscodd_academy_programme = {
-		icon = mission_placeholder
+		icon = mission_rb_take_gibraltar
 		position = 5
 		required_missions = { A80_reclaim_the_coastline } 
 		provinces_to_highlight = {  } 
@@ -441,7 +439,7 @@ iochand_2 = {
 	}
 
 	A80_revitalise_the_fields = {
-		icon = mission_placeholder
+		icon = mission_pol_develop_countryside
 		position = 6
 		required_missions = { A80_pushout_the_kobolds } 
 		provinces_to_highlight = {  } 
@@ -488,7 +486,7 @@ iochand_2 = {
 	}
 
 	A80_damestear_powered_loom = {
-		icon = mission_placeholder
+		icon = mission_rb_central_belt_coal_mining
 		position = 7
 		required_missions = { A80_revitalise_the_fields } 
 		provinces_to_highlight = {  } 
@@ -544,7 +542,7 @@ iochand_2 = {
 	}
 
 	A80_raise_mercenary_pay = {
-		icon = mission_placeholder
+		icon = mission_african_gold
 		position = 9
 		required_missions = { A80_debts_collected } 
 		provinces_to_highlight = {  } 
@@ -602,7 +600,7 @@ iochand_2 = {
 	}
 
 	A80_destroy_the_competition = {
-		icon = mission_placeholder
+		icon = mission_war_chest
 		position = 10
 		required_missions = {
 			A80_integrate_the_halflings
@@ -635,7 +633,7 @@ iochand_3 = {
 	potential = { tag = A80 } 
 
 	A80_restoring_our_heartlands = {
-		icon = mission_placeholder
+		icon = dutch_architecture
 		position = 1
 		provinces_to_highlight = {  } 
 
@@ -657,7 +655,7 @@ iochand_3 = {
 	}
 
 	A80_resurgence_of_the_past = {
-		icon = mission_placeholder
+		icon = mission_early_game_buildings
 		position = 2
 		required_missions = { A80_restoring_our_heartlands } 
 		provinces_to_highlight = {  } 
@@ -682,7 +680,7 @@ iochand_3 = {
 	}
 
 	A80_rebuilding_nimsomms = {
-		icon = mission_placeholder
+		icon = mission_rb_renovate_oxbridge
 		position = 3
 		required_missions = { A80_resurgence_of_the_past } 
 		provinces_to_highlight = {  } 
@@ -706,7 +704,7 @@ iochand_3 = {
 	}
 
 	A80_artificer_academy = {
-		icon = mission_placeholder
+		icon = mission_rb_trinity_college_dublin
 		position = 4
 		required_missions = { A80_rebuilding_nimsomms } 
 		provinces_to_highlight = {  } 
@@ -730,7 +728,7 @@ iochand_3 = {
 	}
 
 	A80_jewel_on_the_westcoast = {
-		icon = mission_placeholder
+		icon = mission_heart_of_the_hansa
 		position = 5
 		required_missions = { A80_artificer_academy } 
 		provinces_to_highlight = {  } 
@@ -767,7 +765,7 @@ iochand_3 = {
 	}
 
 	A80_shady_deals = {
-		icon = mission_placeholder
+		icon = mission_the_sudebnik
 		position = 6
 		required_missions = {
 			A80_nimscodd_academy_programme
@@ -815,7 +813,7 @@ iochand_3 = {
 	}
 
 	A80_debts_collected = {
-		icon = mission_placeholder
+		icon = mission_raid_on_venice
 		position = 8
 		required_missions = { A80_shady_deals } 
 		provinces_to_highlight = {  } 
@@ -871,7 +869,7 @@ iochand_3 = {
 	}
 
 	A80_inland_trade = {
-		icon = mission_placeholder
+		icon = mission_dominate_home_trade_node
 		position = 9
 		required_missions = { A80_debts_collected } 
 		provinces_to_highlight = {  } 
@@ -894,7 +892,7 @@ iochand_4 = {
 	potential = { tag = A80 } 
 
 	A80_undo_the_past = {
-		icon = mission_placeholder
+		icon = mission_establish_the_prikazy
 		position = 1
 		provinces_to_highlight = {  } 
 
@@ -918,7 +916,7 @@ iochand_4 = {
 	}
 
 	A80_secure_costume_supply = {
-		icon = mission_placeholder
+		icon = ven_sempiterni_compagnie
 		position = 4
 		required_missions = { A80_rebuilding_nimsomms } 
 		provinces_to_highlight = {  } 
@@ -942,7 +940,7 @@ iochand_4 = {
 	}
 
 	A80_portnamm_academy_programme = {
-		icon = mission_placeholder
+		icon = misison_uppsala_university
 		position = 5
 		required_missions = { A80_push_into_westport } 
 		provinces_to_highlight = {  } 
@@ -959,7 +957,7 @@ iochand_4 = {
 	}
 
 	A80_twin_academy_programme = {
-		icon = mission_placeholder
+		icon = fra_military_reform
 		position = 6
 		required_missions = {
 			A80_portnamm_academy_programme
@@ -982,7 +980,7 @@ iochand_4 = {
 	}
 
 	A80_dominate_silk_trade = {
-		icon = mission_placeholder
+		icon = mission_son_own_develop_clothes_and_salt
 		position = 8
 		required_missions = { A80_establish_new_trade } 
 		provinces_to_highlight = {  } 
@@ -1006,7 +1004,7 @@ iochand_4 = {
 	}
 
 	A80_advanced_silk_production = {
-		icon = mission_placeholder
+		icon = mission_have_manufactories
 		position = 9
 		required_missions = { A80_dominate_silk_trade } 
 		provinces_to_highlight = {  } 
@@ -1032,7 +1030,7 @@ iochand_5 = {
 	potential = { tag = A80 } 
 
 	A80_borders_restored = {
-		icon = mission_placeholder
+		icon = mission_al_andalus
 		position = 2
 		required_missions = { A80_undo_the_past } 
 		provinces_to_highlight = {  } 
@@ -1074,7 +1072,7 @@ iochand_5 = {
 	}
 
 	A80_push_into_westport = {
-		icon = mission_placeholder
+		icon = mission_invade_island
 		position = 4
 		required_missions = { A80_borders_restored } 
 		provinces_to_highlight = {  } 
@@ -1108,7 +1106,7 @@ iochand_5 = {
 	}
 
 	A80_establish_new_trade = {
-		icon = mission_placeholder
+		icon = mission_bengal_entrepot
 		position = 7
 		required_missions = { A80_push_into_westport } 
 		provinces_to_highlight = {  } 
@@ -1152,7 +1150,7 @@ iochand_5 = {
 	}
 
 	A80_trade_monopoly = {
-		icon = mission_placeholder
+		icon = mission_mal_riches_of_trade
 		position = 8
 		required_missions = { A80_establish_new_trade } 
 		provinces_to_highlight = {  } 
@@ -1206,7 +1204,7 @@ iochand_5 = {
 	}
 
 	A80_westport_costumes = {
-		icon = mission_placeholder
+		icon = mission_prosperity_in_bengal	
 		position = 9
 		required_missions = { A80_trade_monopoly } 
 		provinces_to_highlight = {  } 
@@ -1263,7 +1261,7 @@ iochand_5 = {
 	}
 
 	A80_westport_united = {
-		icon = mission_placeholder
+		icon = mission_russian_navy
 		position = 10
 		required_missions = {
 			A80_advanced_silk_production
