@@ -832,7 +832,9 @@ iochand_3 = {
 				is_core = root
 				has_building = fort_15th
 			}
-			has_mission = A80_trade_monopoly
+			NOT = {
+				has_mission = A80_trade_monopoly
+			}
 		} 
 
 		effect = {  
@@ -1040,7 +1042,9 @@ iochand_5 = {
 				owned_by = root
 				is_core = root
 			}
-			has_mission = A80_pushout_the_kobolds
+			NOT = {
+				has_mission = A80_pushout_the_kobolds
+			}
 		} 
 
 		effect = {  
