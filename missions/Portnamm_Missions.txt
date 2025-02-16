@@ -120,6 +120,7 @@ portnamm_3 = {
 					id = iochand.100
 					days = 3
 				}
+			}
 		}
 	}
 }
