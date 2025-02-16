@@ -912,6 +912,7 @@ iochand_4 = {
 		effect = {  
 			country_event = {
 				id = iochand.3
+				days = 1460
 			}
 		} 
 	}

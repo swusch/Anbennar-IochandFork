@@ -67,69 +67,13 @@ country_event = {
 		128 = { cede_province = A80 }
 		add_dip_power = -100
 		add_treasury = -100
-		hidden_effect = {
-			country_event = {
-				id = iochand.4
-				days = 900
+		southroy_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
 			}
+			add_permanent_claim = ROOT
 		}
-	}
-}
-country_event = {
-	id = iochand.4
-	title = iochand.4.t 
-	desc = iochand.4.d
-	picture = BATTLE_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = { #Buy Thunderward
-		name = iochand.4.a
-		123 = { cede_province = A80 }
-		add_dip_power = -100
-		add_treasury = -100
-		hidden_effect = {
-			country_event = {
-				id = iochand.5
-				days = 900
-			}
-		}
-	}
-}
-country_event = {
-	id = iochand.5
-	title = iochand.5.t 
-	desc = iochand.5.d
-	picture = BATTLE_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = { #Buy Haysfield
-		name = iochand.5.a
-		125 = { cede_province = A80 }
-		add_dip_power = -100
-		add_treasury = -100
-		hidden_effect = {
-			country_event = {
-				id = iochand.6
-				days = 900
-			}
-		}
-	}
-}
-country_event = {
-	id = iochand.6
-	title = iochand.6.t 
-	desc = iochand.6.d
-	picture = BATTLE_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = { #Buy Sildthol
-		name = iochand.6.a
-		124 = { cede_province = A80 }
-		add_dip_power = -100
-		add_treasury = -100
 	}
 }
 country_event = {
