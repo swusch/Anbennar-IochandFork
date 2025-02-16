@@ -135,7 +135,6 @@ on_startup = {
 		flavour_kherka.1 #Kherka Starting Event
 		flavour_vulstenvach.1 #Vuls Tenvach Starting Event
 		flavor_averilibet.6 #averilibet start event 
-		portnamm_startup.1 #Portnamm start event
 
 		#Silver Families
 		silver_families.1		#Silmuna

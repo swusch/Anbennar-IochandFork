@@ -43,6 +43,9 @@ portnamm_2 = {
 				name = thriving_arms_industry
 				duration = 3650
 			}
+			country_event = {
+				id = portnamm.1
+			}
 
 		} 
 	}

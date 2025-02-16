@@ -151,33 +151,3 @@ country_event = {
 
     }
 }
-country_event = {
-    id = portnamm_startup.1
-    title = portnamm_startup.1.t
-    desc = portnamm_startup.1.d
-    picture = CIVIL_WAR_eventPicture
-
-    fire_only_once = yes
-    is_triggered_only = yes
-    major = yes
-
-    option = { #stock general
-        name = "portnamm_startup.1.a"
-		ai_chance = { factor = 0 }	
-		every_country = {
-				limit = {
-				religion = regent_court
-				add_opinion = {
-					who = A05
-					modifier = invaded_iochand
-					years = 20
-				}
-			}
-		}
-    }
-	option = { #stock general
-        name = "portnamm_startup.2.b"
-		ai_chance = { factor = 100 }	
-		add_prestige = 25
-    }
-}
