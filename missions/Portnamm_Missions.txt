@@ -117,6 +117,10 @@ portnamm_3 = {
 			141 = { change_culture = root }
 			142 = { change_culture = iochander }
 			143 = { change_culture = iochander }
+			country_event = {
+				id = iochand.100
+				days = 3
+			}
 		}
 	}
 }

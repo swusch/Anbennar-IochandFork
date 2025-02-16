@@ -179,3 +179,22 @@ country_event = {
 		}
 	}
 }
+country_event = {
+    id = iochand.100
+    title = iochand.100.t
+    desc = iochand.100.d
+    picture = CIVIL_WAR_eventPicture
+
+    fire_only_once = yes
+    is_triggered_only = yes
+    major = yes
+
+    option = { #stock general
+            name = "iochand.100.a"
+            add_country_modifier = {
+                name = iochand_starting_disaster
+                duration = 3650
+            }
+
+    }
+}
