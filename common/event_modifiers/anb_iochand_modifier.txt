@@ -73,3 +73,6 @@ iochand_starting_disaster = {
     trade_efficiency = -0.15
     land_morale = -0.1
 }
+iochand_remove_artificer_units = {
+	special_unit_forcelimit = -1
+}
