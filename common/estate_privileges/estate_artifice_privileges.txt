@@ -14023,16 +14023,16 @@ artifice_invention_advanced_silk_production = {
 				trade_goods = silk
 			}
 			add_province_modifier = {
-				name = artifice_growthbeans_bonus
+				name = artifice_advanced_silk_production
 				duration = -1
 				hidden = yes
 			}
 		}
 		else_if = {
 			limit = {
-				has_province_modifier = artifice_growthbeans_bonus
+				has_province_modifier = artifice_advanced_silk_production
 			}
-			remove_province_modifier = artifice_growthbeans_bonus
+			remove_province_modifier = artifice_advanced_silk_production
 		}
 	}
 	on_revoked = {
@@ -14045,9 +14045,9 @@ artifice_invention_advanced_silk_production = {
 	on_revoked_province = {
 		if = {
 			limit = {
-				has_province_modifier = artifice_growthbeans_bonus
+				has_province_modifier = artifice_advanced_silk_production
 			}
-			remove_province_modifier = artifice_growthbeans_bonus
+			remove_province_modifier = artifice_advanced_silk_production
 		}
 	}
 	on_invalid = {
@@ -14060,9 +14060,9 @@ artifice_invention_advanced_silk_production = {
 	on_invalid_province = {
 		if = {
 			limit = {
-				has_province_modifier = artifice_growthbeans_bonus
+				has_province_modifier = artifice_advanced_silk_production
 			}
-			remove_province_modifier = artifice_growthbeans_bonus
+			remove_province_modifier = artifice_advanced_silk_production
 		}
 	}
 	penalties = {
@@ -14070,7 +14070,6 @@ artifice_invention_advanced_silk_production = {
 	}
 	benefits = {
 		artificers_privilege_slots = 1
-		dragon_command_privilege_slots = 1
 		tec_technomancy_influence = 0.04
 	}
 	ai_will_do = {

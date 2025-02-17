@@ -102,6 +102,7 @@ portnamm_3 = {
 				owned_by = ROOT
 				is_core = ROOT
 			}
+			is_at_war = no
 		} 
 
 		effect = {  
@@ -143,16 +144,20 @@ portnamm_3 = {
 					name = "centralization_modifier"
 					duration = 7300
 				}
+
+				country_event = {
+					id = iochand.101
+					days = 3
+				}
+
 				141 = { change_culture = root }
 				142 = { change_culture = iochander }
 				143 = { change_culture = iochander }
-				country_event = {
-					id = iochand.100
-					days = 3
-				}
+				
 				add_accepted_culture_or_dip_power = {
 					culture = iochander
 				}
+
 				add_country_modifier = {
 					name = iochand_gnomish_human_unionocracy
 					duration = -1

@@ -2123,7 +2123,7 @@ merc_tadlouds_1 = {
 			}
 		}
 	}
-	cost_modifier = 1.25
+	cost_modifier = 0.75
 	modifier = {
 		infantry_fire = 0.15
 		infantry_power = 0.1

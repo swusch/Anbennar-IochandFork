@@ -78,10 +78,6 @@ iochand_remove_artificer_units = {
 iochand_gnomish_human_unionocracy = {
 	num_accepted_cultures = 1
 }
-invaded_iochand = {
-	opinion = -100
-	yearly_decay = 10
-}
 tadlouds_veteran_camp_1 = {
 	global_manpower_modifier = -0.1
 }
@@ -104,9 +100,14 @@ tadlouds_veteran_camp_6 = {
 	global_manpower_modifier = -0.6
 }
 iochand_westport_united_reward = {
-	is_mercenary_modifier = yes
-	manpower_recovery_speed = 0.5
+	merc_leader_army_tradition = 0.20
 }
 iochand_refill_cooldown = {
-	
+
+}
+iochand_damestear_loom_engine = {
+	trade_goods_size_modifier = 0.25
+}
+artifice_advanced_silk_production = {
+	trade_goods_size_modifier = 0.25
 }

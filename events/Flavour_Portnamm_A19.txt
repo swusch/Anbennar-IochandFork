@@ -35,8 +35,8 @@ country_event = {
 			limit = {
 				religion = regent_court
 			}
-			add_opinion_modifier = {
-				who = A05
+			add_opinion = {
+				who = root
 				modifier = scornfully_insulted
 			}
 		}

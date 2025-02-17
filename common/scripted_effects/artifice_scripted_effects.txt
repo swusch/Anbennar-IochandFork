@@ -5476,6 +5476,7 @@ disable_all_artifice_inventions = {
 		remove_estate_privilege = artifice_invention_city_maintenance_bots
 		remove_estate_privilege = artifice_invention_artificial_egg_surrogates
 		remove_estate_privilege = artifice_invention_subterrenes
+		remove_estate_privilege = artifice_invention_advanced_silk_production
 		# tier 2 society
 		remove_estate_privilege = artifice_invention_remedial_tinctures
 		remove_estate_privilege = artifice_invention_arithmatons

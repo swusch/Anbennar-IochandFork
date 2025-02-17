@@ -13,8 +13,8 @@ iochand_1 = {
 		} 
 		trigger = {  
 			alliance_with = A06
-			treasury = 200
-			mil_power = 50
+			treasury = 250
+			mil_power = 100
 			is_at_war = no
 			A06 = {
 				is_at_war = no
@@ -22,8 +22,8 @@ iochand_1 = {
 		} 
 
 		effect = {  
-			add_treasury = -200
-			add_mil_power = -50
+			add_treasury = -250
+			add_mil_power = -100
 			vassalize = A06
 			
 			hidden_effect = {
@@ -422,10 +422,14 @@ iochand_1 = {
 		} 
 
 		trigger = { 
-			num_of_provinces_owned_or_owned_by_subjects_with = {
-				value = 20
-				region = small_country_region
+			custom_trigger_tooltip = {
+				tooltip = iochand_halflings_united_trigger_tt
+				num_of_provinces_owned_or_owned_by_subjects_with = {
+					value = 20
+					region = small_country_region
+				}
 			}
+			
 		} 
 
 		effect = {  
@@ -623,6 +627,10 @@ iochand_2 = {
 					}
 				}
 			}
+			146 = {
+				development = 25
+				num_of_times_expanded_infrastructure = 1
+			}
 		} 
 
 		effect = {  
@@ -634,6 +642,12 @@ iochand_2 = {
 						name = iochand_dragon_coast_silk
 						duration = -1
 					}
+				}
+			}
+			146 = {
+				add_province_modifier = {
+					name = iochand_damestear_loom_engine
+					duration = -1
 				}
 			}
 			hidden_effect = {
@@ -734,10 +748,13 @@ iochand_2 = {
 			A80_inland_trade
 		}
 		provinces_to_highlight = {  
-			region = small_country_region
-			OR = {
-				NOT = { owned_by = root }
-				NOT = { is_core = root }
+			custom_trigger_tooltip = {
+				tooltip = iochand_small_country_united_trigger_tt
+				region = small_country_region
+				OR = {
+					NOT = { owned_by = root }
+					NOT = { is_core = root }
+				}
 			}
 		} 
 
@@ -1022,16 +1039,22 @@ iochand_3 = {
 		} 
 
 		trigger = {  
-			num_of_provinces_owned_or_owned_by_subjects_with = {
-				value = 6
-				region = small_country_region
-				is_core = root
+			custom_trigger_tooltip = {
+				tooltip = iochand_debts_trigger_1_tt
+				num_of_provinces_owned_or_owned_by_subjects_with = {
+					value = 6
+					region = small_country_region
+					is_core = root
+				}
 			}
-			num_of_provinces_owned_or_owned_by_subjects_with = {
-				value = 1
-				region = small_country_region
-				is_core = root
-				has_building = fort_15th
+			custom_trigger_tooltip = {
+				tooltip = iochand_debts_trigger_2_tt
+				num_of_provinces_owned_or_owned_by_subjects_with = {
+					value = 1
+					region = small_country_region
+					is_core = root
+					has_building = fort_15th
+				}
 			}
 		} 
 
@@ -1080,7 +1103,10 @@ iochand_3 = {
 		} 
 
 		trigger = {  
-			151 = { is_strongest_trade_power = root }
+			custom_trigger_tooltip = {
+				tooltip = iochand_inland_trade_trigger_tt
+				151 = { is_strongest_trade_power = root }
+			}
 		} 
 
 		effect = {  
@@ -1123,10 +1149,13 @@ iochand_4 = {
 		} 
 
 		effect = {  
+			add_dip_power = -100
+			add_treasury = -100
 			country_event = {
 				id = iochand.3
 				days = 1460
 			}
+
 		} 
 	}
 
