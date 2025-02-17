@@ -47,15 +47,33 @@ iochand_1 = {
 		icon = mission_end_the_sound_toll
 		position = 3
 		required_missions = { A80_arming_nimscodd } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  
-			170 = {
-				owner ={
-					has_spy_network_from = {
-						who = root
-						value = 50
+		provinces_to_highlight = {  
+			province_id = 170
+			OR = {
+				NOT = {
+					owner ={
+						has_spy_network_from = {
+							who = root
+							value = 50
+						}
 					}
+				}
+				NOT = { owned_by = A06 }
+			}
+		} 
+
+		trigger = { 
+			OR = { 
+				170 = {
+					owner ={
+						has_spy_network_from = {
+							who = root
+							value = 50
+						}
+					}
+				}
+				170 = {
+					owned_by = A06
 				}
 			}
 		} 
@@ -99,6 +117,12 @@ iochand_1 = {
 		position = 4
 		required_missions = { A80_hostile_takeover } 
 		provinces_to_highlight = {  
+			OR = {
+				province_id = 170
+				area = dragondowns_area
+				area =dragonpoint_area
+			}
+			NOT = { owned_by = A06 }
 		} 
 
 		trigger = {  
@@ -158,7 +182,15 @@ iochand_1 = {
 		icon = mission_strengthen_the_vegvar
 		position = 5
 		required_missions = { A80_reclaim_the_coastline } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			OR = {
+				area = dragonspine_area
+				area = dragonheights_area
+				area = dragonmaw_area
+				area = dragonheart_area
+			}
+			NOT = { owned_by = A06 }
+		} 
 
 		trigger = {  
 			dragonspine_area = {
@@ -224,7 +256,13 @@ iochand_1 = {
 		icon = mission_iron_and_copper
 		position = 6
 		required_missions = { A80_pushout_the_kobolds } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			area= dragonspine_area
+			OR = {
+				NOT = { is_core = root }
+				NOT = { base_production = 5 }
+			}
+		} 
 
 		trigger = { 
 			dragonspine_area = {
@@ -269,7 +307,13 @@ iochand_1 = {
 		icon = mission_zambezi_gold
 		position = 7
 		required_missions = { A80_mine_the_spine } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			province_id = 179
+			OR = {
+				NOT = { development = 15 }
+				NOT = { num_of_times_expanded_infrastructure = 1 }
+			}
+		} 
 
 		trigger = { 
 			179 = {
@@ -296,7 +340,22 @@ iochand_1 = {
 			A80_gold_in_norbit
 			A80_damestear_powered_loom
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			owned_by = ROOT
+			region = dragon_coast_region
+			OR = {
+				AND = {
+					trade_goods = grain
+					NOT = {
+						AND = {
+							has_building = regimental_camp
+							has_building = farm_estate
+							development = 20
+						}
+					}
+				}
+			}
+		} 
 
 		trigger = {  
 			custom_trigger_tooltip = {
@@ -322,7 +381,10 @@ iochand_1 = {
 			is_at_war = no
 		} 
 
-		effect = {  
+		effect = { 
+			custom_tooltip = iochand_unlock_tadlouds_t3_tt 
+			set_country_flag = unlocked_merc_tadlouds_3
+			mission_reward_artifice_points_5 = yes
 			custom_tooltip = iochand_dragon_coast_grain_effect_tt
 			tooltip = {
 				capital_scope = {
@@ -332,8 +394,11 @@ iochand_1 = {
 					}
 				}
 			}
-			custom_tooltip = iochand_unlock_tadlouds_t3_tt
 			hidden_effect = {
+				random_hired_mercenary_company = {
+					template ={ template = merc_tadlouds_2 }
+					disband_mercenary_company = THIS
+				}
 				every_owned_province = {
 					limit = {
 						trade_goods = grain
@@ -352,7 +417,9 @@ iochand_1 = {
 		icon = prosperity_for_all
 		position = 9
 		required_missions = { A80_debts_collected } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			region = small_country_region
+		} 
 
 		trigger = { 
 			num_of_provinces_owned_or_owned_by_subjects_with = {
@@ -382,7 +449,13 @@ iochand_2 = {
 	A80_crushing_the_reavers = {
 		icon = mission_disrupt_portuguese_trade
 		position = 1
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			area = reaver_coast_area
+			OR = {
+				NOT = { owned_by = root }
+				NOT = { is_core = root }
+			} 
+		} 
 
 		trigger = {  
 			reaver_coast_area = {
@@ -402,7 +475,13 @@ iochand_2 = {
 		icon = mission_sw_torquoise_mining
 		position = 4
 		required_missions = { A80_hostile_takeover } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			province_id = 146
+			OR = {
+				NOT = { base_production = 8 }
+				NOT = { has_building = workshop }
+			}
+		} 
 
 		trigger = {  
 			146 = {
@@ -411,14 +490,15 @@ iochand_2 = {
 			}
 		} 
 
-		effect = {  
+		effect = { 
+			mission_reward_artifice_points_2 = yes 
 			146 = {
 				cede_province = A80
 				add_core = A80
-			}
-			add_province_modifier = {
-				name = iochand_damestear_exploit
-				duration = -1
+				add_province_modifier = {
+					name = iochand_damestear_exploit
+					duration = -1
+				}
 			}
 		} 
 	}
@@ -444,7 +524,21 @@ iochand_2 = {
 		icon = mission_pol_develop_countryside
 		position = 6
 		required_missions = { A80_pushout_the_kobolds } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			owned_by = ROOT
+			region = dragon_coast_region
+			OR = {
+				AND = {
+					trade_goods = fish
+					NOT = {
+						AND = {
+							has_building = workshop
+							num_of_times_improved = 5
+						}
+					}
+				}
+			}
+		} 
 
 		trigger = {  
 			custom_trigger_tooltip = {
@@ -491,7 +585,22 @@ iochand_2 = {
 		icon = mission_rb_central_belt_coal_mining
 		position = 7
 		required_missions = { A80_revitalise_the_fields } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			owned_by = ROOT
+			region = dragon_coast_region
+			OR = {
+				AND = {
+					trade_goods = wool
+					NOT = {
+						AND = {
+							has_building = workshop
+							has_building = regimental_camp
+							num_of_times_improved = 5
+						}
+					}
+				}
+			}
+		} 
 
 		trigger = {  
 			custom_trigger_tooltip = {
@@ -547,7 +656,22 @@ iochand_2 = {
 		icon = mission_african_gold
 		position = 9
 		required_missions = { A80_debts_collected } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			owned_by = ROOT
+			region = small_country_region
+			OR = {
+				AND = {
+					trade_goods = grain
+					NOT = {
+						AND = {
+							has_building = regimental_camp
+							has_building = farm_estate
+							development = 25
+						}
+					}
+				}
+			}
+		} 
 
 		trigger = {  
 			custom_trigger_tooltip = {
@@ -609,7 +733,13 @@ iochand_2 = {
 			A80_raise_mercenary_pay
 			A80_inland_trade
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			region = small_country_region
+			OR = {
+				NOT = { owned_by = root }
+				NOT = { is_core = root }
+			}
+		} 
 
 		trigger = {  
 			small_country_region = {
@@ -620,6 +750,7 @@ iochand_2 = {
 		} 
 
 		effect = {  
+			mission_reward_artifice_points_5 = yes
 			add_country_modifier = {
 				name = iochand_supramecy_over_small_country
 				duration = -1
@@ -637,7 +768,16 @@ iochand_3 = {
 	A80_restoring_our_heartlands = {
 		icon = dutch_architecture
 		position = 1
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			area = iochand_area
+			NOT = {
+				AND = {
+					owned_by = root 
+					is_core = root 
+					num_of_times_improved = 2 
+				}
+			} 
+		} 
 
 		trigger = {  
 			iochand_area = {
@@ -660,7 +800,17 @@ iochand_3 = {
 		icon = mission_early_game_buildings
 		position = 2
 		required_missions = { A80_restoring_our_heartlands } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			province_id = 126
+			NOT = {
+				AND = {
+					development = 25 
+					has_tax_building_trigger = yes 
+					has_trade_building_trigger = yes
+					num_of_times_expanded_infrastructure = 1
+				}
+			}
+		} 
 
 		trigger = {  
 			126 = {
@@ -685,7 +835,15 @@ iochand_3 = {
 		icon = mission_rb_renovate_oxbridge
 		position = 3
 		required_missions = { A80_resurgence_of_the_past } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			province_id = 126
+			NOT = {
+				AND = {
+					development = 30
+					num_of_times_expanded_infrastructure = 2
+				}
+			}
+		} 
 
 		trigger = {  
 			126 = {
@@ -709,7 +867,16 @@ iochand_3 = {
 		icon = mission_rb_trinity_college_dublin
 		position = 4
 		required_missions = { A80_rebuilding_nimsomms } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			province_id = 126
+			NOT = {
+				AND = {
+					development = 35
+					has_production_building_trigger = yes
+					has_manpower_building_trigger = yes
+				}
+			}
+		} 
 
 		trigger = {  
 			126 = {
@@ -720,15 +887,21 @@ iochand_3 = {
 			is_at_war = no
 		} 
 
-		effect = {  
-			custom_tooltip = iochand_unlocked_artificer_academy_tt
-			custom_tooltip = unlocked_merc_tadlouds_2_tt
+		effect = {
+			country_event = {
+				id = iochand.4
+				days = 5475
+			}
 			add_country_modifier = {
 				name = iochand_remove_artificer_units
 				duration = -1
 			}
+			custom_tooltip = unlocked_merc_tadlouds_2_tt
 			hidden_effect = {
-				set_country_flag = portnamm_academy_1
+				random_hired_mercenary_company = {
+					template ={ template = merc_tadlouds_1 }
+					disband_mercenary_company = THIS
+				}
 				set_country_flag = unlocked_merc_tadlouds_2
 			}
 		} 
@@ -738,7 +911,17 @@ iochand_3 = {
 		icon = mission_heart_of_the_hansa
 		position = 5
 		required_missions = { A80_artificer_academy } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			province_id = 126
+			NOT = {
+				AND = {
+					development = 40
+					has_tax_building_trigger = yes
+					has_production_building_trigger = yes
+					has_manpower_building_trigger = yes
+				}
+			}
+		} 
 
 		trigger = {  
 			126 = {
@@ -751,6 +934,7 @@ iochand_3 = {
 					tooltip = iochand_most_developed_city_in_the_world
 					NOT = {
 						any_province = {
+							has_terrain = city_terrain
 							higher_development_than = PREV
 						}
 					}
@@ -759,6 +943,7 @@ iochand_3 = {
 		} 
 
 		effect = {  
+			mission_reward_artifice_points_3 = yes
 			add_country_modifier = {
 				name = iochand_jewel
 				duration = -1
@@ -778,7 +963,15 @@ iochand_3 = {
 			A80_nimscodd_academy_programme
 			A80_portnamm_academy_programme
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			province_id = 151
+			NOT = {
+				trading_policy_in_node = {
+					node = 151
+					policy = hostile_trading
+				}
+			}
+		} 
 
 		trigger = {  
 			trading_policy_in_node = {
@@ -823,7 +1016,10 @@ iochand_3 = {
 		icon = mission_raid_on_venice
 		position = 8
 		required_missions = { A80_shady_deals } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			region = small_country_region
+			NOT = { country_or_subject_holds = ROOT }
+		} 
 
 		trigger = {  
 			num_of_provinces_owned_or_owned_by_subjects_with = {
@@ -836,9 +1032,6 @@ iochand_3 = {
 				region = small_country_region
 				is_core = root
 				has_building = fort_15th
-			}
-			NOT = {
-				has_mission = A80_trade_monopoly
 			}
 		} 
 
@@ -879,7 +1072,12 @@ iochand_3 = {
 		icon = mission_dominate_home_trade_node
 		position = 9
 		required_missions = { A80_debts_collected } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			province_id = 151
+			NOT = {
+				is_strongest_trade_power = root
+			}
+		} 
 
 		trigger = {  
 			151 = { is_strongest_trade_power = root }
@@ -901,7 +1099,17 @@ iochand_4 = {
 	A80_undo_the_past = {
 		icon = mission_establish_the_prikazy
 		position = 1
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			province_id = 67
+			NOT = {
+				owner = {
+					has_opinion = {
+						who = A80
+						value = 100
+					}
+				}
+			}
+		} 
 
 		trigger = {  
 			A01 = {
@@ -926,7 +1134,15 @@ iochand_4 = {
 		icon = ven_sempiterni_compagnie
 		position = 4
 		required_missions = { A80_rebuilding_nimsomms } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			province_id = 129
+			NOT = {
+				AND = {
+					num_of_times_improved = 7
+					has_production_building_trigger = yes
+				}
+			}
+		} 
 
 		trigger = {  
 			129 = {
@@ -936,6 +1152,7 @@ iochand_4 = {
 		} 
 
 		effect = {  
+			mission_reward_artifice_points_2 = yes
 			129 = {
 				change_trade_goods = silk
 				add_province_modifier = {
@@ -990,7 +1207,16 @@ iochand_4 = {
 		icon = mission_son_own_develop_clothes_and_salt
 		position = 8
 		required_missions = { A80_establish_new_trade } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			OR = {
+				region = dragon_coast_region
+				region = lencenor_region
+			}
+			AND = {
+				trade_goods = silk
+				owned_by = root 
+			}
+		} 
 
 		trigger = {  
 			trading_bonus = {
@@ -1014,7 +1240,16 @@ iochand_4 = {
 		icon = mission_have_manufactories
 		position = 9
 		required_missions = { A80_dominate_silk_trade } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			OR = {
+				region = dragon_coast_region
+				region = lencenor_region
+			}
+			AND = {
+				trade_goods = silk
+				owned_by = root
+			}
+		} 
 
 		trigger = {  
 			trade_goods_produced_amount = {
@@ -1040,7 +1275,13 @@ iochand_5 = {
 		icon = mission_al_andalus
 		position = 2
 		required_missions = { A80_undo_the_past } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			area = southroy_area
+			OR = {
+				NOT = { owned_by = root }
+				NOT = { is_core = root }
+			} 
+		} 
 
 		trigger = {  
 			southroy_area = {
@@ -1084,7 +1325,18 @@ iochand_5 = {
 		icon = mission_invade_island
 		position = 4
 		required_missions = { A80_borders_restored } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			OR = {
+				area = deranne_area
+				area = redglades_area
+			}
+			NOT = {
+				AND = {
+					owned_by = root
+					is_core = root
+				}
+			}
+		} 
 
 		trigger = {  
 			OR = {
@@ -1118,7 +1370,16 @@ iochand_5 = {
 		icon = mission_bengal_entrepot
 		position = 7
 		required_missions = { A80_push_into_westport } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			region = lencenor_region
+			AND = {
+				owned_by = root
+				NOT = {
+					has_trade_building_trigger = yes
+					num_of_times_improved = 5
+				}
+			}
+		} 
 
 		trigger = {  
 			custom_trigger_tooltip = {
@@ -1188,7 +1449,7 @@ iochand_5 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			sorncoast_vines_area = {
+			sorncost_vines_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -1216,7 +1477,19 @@ iochand_5 = {
 		icon = mission_prosperity_in_bengal	
 		position = 9
 		required_missions = { A80_trade_monopoly } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			OR = {
+				area = shrouded_coast_area
+				area = sorncost_vines_area
+			}
+			NOT = {
+				AND = {
+					has_building = workshop
+					development = 25
+					num_of_times_expanded_infrastructure = 1
+				}
+			}
+		} 
 
 		trigger = {  
 			custom_trigger_tooltip = {
@@ -1228,7 +1501,7 @@ iochand_5 = {
 					development = 25
 					num_of_times_expanded_infrastructure = 1
 				}
-				sorncoast_vines_area = {
+				sorncost_vines_area = {
 					type = all
 					owned_by = root
 					has_building = workshop
@@ -1237,7 +1510,6 @@ iochand_5 = {
 				}
 			} 
 		}
-	}
 
 		effect = {  
 			custom_tooltip = iochand_westport_costumes_effect_tt
@@ -1251,7 +1523,7 @@ iochand_5 = {
 				}
 			}
 			hidden_effect = {
-				sorncoast_vines_area = {
+				sorncost_vines_area = {
 					change_trade_goods = silk
 					add_province_modifier = {
 						name = iochand_dragon_coast_silk
@@ -1276,10 +1548,79 @@ iochand_5 = {
 			A80_advanced_silk_production
 			A80_westport_costumes
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  
+			OR = {
+				area = darom_area
+				area = venail_area
+				area = sornhills_area
+				area = sorncost_vines_area
+				area = shrouded_coast_area
+				area = northern_flats_area
+				area = deranne_area
+				area = redglages_area
+				area = southroy_area
+			}
+			NOT = { 
+				AND = {
+					owned_by = root
+					is_core = root
+				}
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {  
+			custom_trigger_tooltip = {
+				tooltip = iochand_westport_united_trigger_tt
+				venail_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				sornhills_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				sorncost_vines_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				shrouded_coast_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				darom_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				northern_flats_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				deranne_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				redglages_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				southroy_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		} 
 
-		effect = {  } 
+		effect = { 
+			mission_reward_artifice_points_5 = yes
+		} 
 	}
 }

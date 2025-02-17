@@ -32,16 +32,15 @@ country_event = {
         name = "portnamm.11.a"
 		ai_chance = { factor = 100 }	
 		every_country = {
-				limit = {
-					religion = regent_court
-				}
-				add_opinion = {
-					who = A05
-					modifier = invaded_iochand
-				}
+			limit = {
+				religion = regent_court
+			}
+			add_opinion_modifier = {
+				who = A05
+				modifier = scornfully_insulted
 			}
 		}
-    }
+	}
 	option = { 
         name = "portnamm.11.b"
 		ai_chance = { factor = 0 }

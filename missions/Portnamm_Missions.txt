@@ -25,6 +25,9 @@ portnamm_2 = {
 		}
 
 		effect = { 
+			country_event = {
+				id = portnamm.10
+			}
 			iochand_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -40,13 +43,14 @@ portnamm_2 = {
 				add_permanent_claim = ROOT
 			}
 			add_country_modifier = {
+				name = tadlouds_veteran_camp_1
+				duration = -1
+			}
+			add_country_modifier = {
 				name = thriving_arms_industry
 				duration = 3650
 			}
-			country_event = {
-				id = portnamm.10
-			}
-
+			
 		} 
 	}
 }
@@ -126,6 +130,11 @@ portnamm_3 = {
 			add_country_modifier = { 
 				name = restructuring_military
 				duration = 3650
+			}
+			remove_country_modifier = tadlouds_veteran_camp_1
+			add_country_modifier = {
+				name = tadlouds_veteran_camp_2
+				duration = -1
 			}
 			add_prestige = 25
 			swap_non_generic_missions = yes

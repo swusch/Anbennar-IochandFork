@@ -82,3 +82,31 @@ invaded_iochand = {
 	opinion = -100
 	yearly_decay = 10
 }
+tadlouds_veteran_camp_1 = {
+	global_manpower_modifier = -0.1
+}
+tadlouds_veteran_camp_2 = {
+	global_manpower_modifier = -0.2
+}
+tadlouds_veteran_camp_3 = {
+	global_manpower_modifier = -0.3
+}
+tadlouds_veteran_camp_3 = {
+	global_manpower_modifier = -0.3
+}
+tadlouds_veteran_camp_4 = {
+	global_manpower_modifier = -0.4
+}
+tadlouds_veteran_camp_5 = {
+	global_manpower_modifier = -0.5
+}
+tadlouds_veteran_camp_6 = {
+	global_manpower_modifier = -0.6
+}
+iochand_westport_united_reward = {
+	is_mercenary_modifier = yes
+	manpower_recovery_speed = 0.5
+}
+iochand_refill_cooldown = {
+	
+}

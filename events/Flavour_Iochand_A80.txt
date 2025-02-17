@@ -80,6 +80,21 @@ country_event = {
 	}
 }
 country_event = {
+	id = iochand.4
+	title = iochand.4.t 
+	desc = iochand.4.d
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Academy unlock
+		name = iochand.4.a
+		custom_tooltip = iochand_unlocked_artificer_academy_tt
+		set_country_flag = portnamm_academy_1
+	}
+}
+
+country_event = {
 	id = iochand.7
 	title = iochand.7.t 
 	desc = iochand.7.d
@@ -124,6 +139,7 @@ country_event = {
 			name = iochand_academy_programme_funds
 			duration = 3650
 		}
+		mission_reward_artifice_points_3 = yes
 	}
 }
 country_event = {
