@@ -2123,7 +2123,7 @@ merc_tadlouds_1 = {
 			}
 		}
 	}
-	cost_modifier = 0.75
+	cost_modifier = 1.25
 	modifier = {
 		infantry_fire = 0.15
 		infantry_power = 0.1
@@ -2148,7 +2148,7 @@ merc_tadlouds_2 = {
 		has_country_flag = unlocked_merc_tadlouds_2
 		NOT = { has_country_flag = unlocked_merc_tadlouds_3 }
 	}
-	cost_modifier = 0.75
+	cost_modifier = 1.25
 	modifier = {
 		infantry_fire = 0.25
 		infantry_power = 0.15
@@ -2174,7 +2174,32 @@ merc_tadlouds_3 = {
 		has_country_flag = unlocked_merc_tadlouds_3
 
 	}
-	cost_modifier = 0.75
+	cost_modifier = 1.25
+	modifier = {
+		infantry_fire = 0.35
+		infantry_power = 0.2
+		artillery_fire = 0.5
+	}
+	min_size = 50
+	max_size = 50
+
+}
+merc_tadlouds_3_reserve = {
+    regiments_per_development = 0.01
+	cavalry_weight = 0
+	artillery_weight = 0.4
+	cavalry_cap = 0
+	home_province = 126
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		OR = {
+			tag = A19
+			tag = A80
+		}
+		has_country_flag = unlocked_merc_tadlouds_3
+
+	}
+	cost_modifier = 1.25
 	modifier = {
 		infantry_fire = 0.35
 		infantry_power = 0.2
@@ -2203,7 +2228,7 @@ merc_artificer_1_1 = {
 	}
 	cost_modifier = 1
 	modifier = {
-		infantry_fire = 0.15
+		infantry_fire = 0.1
 		infantry_power = 0.1
 	}
 	min_size = 20
@@ -2213,29 +2238,6 @@ merc_artificer_1_1 = {
 #Iochand Artificer Academy Mercs T2
 
 merc_artificer_2_1 = {
-    regiments_per_development = 0.01
-	cavalry_weight = 0
-	cavalry_cap = 0
-	artillery_weight = 0
-	home_province = 126
-	sprites = { westerngfx_sprite_pack }
-    trigger = {
-		OR = {
-			tag = A19
-			tag = A80
-		}
-		has_country_flag = portnamm_academy_2
-	}
-	cost_modifier = 1
-	modifier = {
-		infantry_fire = 0.15
-		infantry_power = 0.1
-	}
-	min_size = 24
-	max_size = 24
-}
-
-merc_artificer_2_2 = {
     regiments_per_development = 0.01
 	cavalry_weight = 0
 	cavalry_cap = 0
@@ -2284,29 +2286,6 @@ merc_artificer_3_1 = {
 }
 
 merc_artificer_3_2 = {
-    regiments_per_development = 0.01
-	cavalry_weight = 0
-	cavalry_cap = 0
-	artillery_weight = 0
-	home_province = 126
-	sprites = { westerngfx_sprite_pack }
-    trigger = {
-		OR = {
-			tag = A19
-			tag = A80
-		}
-		has_country_flag = portnamm_academy_3
-	}
-	cost_modifier = 1
-	modifier = {
-		infantry_fire = 0.15
-		infantry_power = 0.1
-	}
-	min_size = 27
-	max_size = 27
-}
-
-merc_artificer_3_3 = {
     regiments_per_development = 0.01
 	cavalry_weight = 0
 	cavalry_cap = 0
@@ -2380,30 +2359,6 @@ merc_artificer_4_2 = {
 }
 
 merc_artificer_4_3 = {
-    regiments_per_development = 0.01
-	cavalry_weight = 0
-	cavalry_cap = 0
-	artillery_weight = 0
-	home_province = 126
-	sprites = { westerngfx_sprite_pack }
-    trigger = {
-		OR = {
-			tag = A19
-			tag = A80
-		}
-		has_country_flag = portnamm_academy_4
-	}
-	cost_modifier = 1.15
-	modifier = {
-		infantry_fire = 0.15
-		infantry_power = 0.15
-		morale_damage_received = -0.075
-	}
-	min_size = 30
-	max_size = 30
-}
-
-merc_artificer_4_4 = {
     regiments_per_development = 0.01
 	cavalry_weight = 0
 	cavalry_cap = 0
@@ -2502,30 +2457,6 @@ merc_artificer_5_3 = {
 }
 
 merc_artificer_5_4 = {
-    regiments_per_development = 0.01
-	cavalry_weight = 0
-	cavalry_cap = 0
-	artillery_weight = 0
-	home_province = 126
-	sprites = { westerngfx_sprite_pack }
-    trigger = {
-		OR = {
-			tag = A19
-			tag = A80
-		}
-		has_country_flag = portnamm_academy_5
-	}
-	cost_modifier = 1.3
-	modifier = {
-		infantry_fire = 0.3
-		infantry_power = 0.15
-		morale_damage_received = -0.15
-	}
-	min_size = 32
-	max_size = 32
-}
-
-merc_artificer_5_5 = {
     regiments_per_development = 0.01
 	cavalry_weight = 0
 	cavalry_cap = 0
@@ -2671,30 +2602,6 @@ merc_artificer_6_5 = {
 	max_size = 34
 }
 
-merc_artificer_6_6 = {
-    regiments_per_development = 0.01
-	cavalry_weight = 0
-	cavalry_cap = 0
-	artillery_weight = 0
-	home_province = 126
-	sprites = { westerngfx_sprite_pack }
-    trigger = {
-		OR = {
-			tag = A19
-			tag = A80
-		}
-		has_country_flag = portnamm_academy_6
-	}
-	cost_modifier = 1.6
-	modifier = {
-		infantry_fire = 0.4
-		infantry_power = 0.15
-		morale_damage_received = -0.2
-	}
-	min_size = 34
-	max_size = 34
-}
-
 #Iochand Artificer Academy Mercs T7
 
 merc_artificer_7_1 = {
@@ -2808,54 +2715,6 @@ merc_artificer_7_5 = {
 		has_country_flag = portnamm_academy_7
 	}
 	cost_modifier = 1.75
-	modifier = {
-		infantry_fire = 0.4
-		infantry_power = 0.2
-		morale_damage_received = -0.2
-	}
-	min_size = 36
-	max_size = 36
-}
-
-merc_artificer_7_6 = {
-    regiments_per_development = 0.01
-	cavalry_weight = 0
-	cavalry_cap = 0
-	artillery_weight = 0
-	home_province = 126
-	sprites = { westerngfx_sprite_pack }
-    trigger = {
-		OR = {
-			tag = A19
-			tag = A80
-		}
-		has_country_flag = portnamm_academy_7
-	}
-	cost_modifier = 1.75
-	modifier = {
-		infantry_fire = 0.4
-		infantry_power = 0.2
-		morale_damage_received = -0.2
-	}
-	min_size = 36
-	max_size = 36
-}
-
-merc_artificer_7_7 = {
-    regiments_per_development = 0.01
-	cavalry_weight = 0
-	cavalry_cap = 0
-	artillery_weight = 0
-	home_province = 126
-	sprites = { westerngfx_sprite_pack }
-    trigger = {
-		OR = {
-			tag = A19
-			tag = A80
-		}
-		has_country_flag = portnamm_academy_7
-	}
-	cost_modifier = 1
 	modifier = {
 		infantry_fire = 0.4
 		infantry_power = 0.2

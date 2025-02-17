@@ -109,6 +109,7 @@ portnamm_3 = {
 				}
 				set_government_rank = 2
 			}
+			clear_racial_military = yes
 			tooltip = {
 				add_country_modifier = {
 					name = human_military
