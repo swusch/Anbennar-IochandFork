@@ -15,7 +15,7 @@ dragonspine_gold_mining = {
 
 iochand_dragon_coast_grain = {
 	regiment_recruit_speed = -0.25
-	trade_goods_size = 0.5
+	land_forcelimit = 0.5
 }
 iochand_dragon_coast_silk_1 = {
 	province_trade_power_modifier = 0.2
@@ -45,7 +45,7 @@ iochand_push_into_westport = {
 	trade_efficiency = 0.15
 }
 iochand_lencenor_new_trade = {
-	province_trade_power_value = 5
+	province_trade_power_value = 10
 }
 iochand_trade_monopoly = {
 	merchants = 1

@@ -680,7 +680,7 @@ iochand_2 = {
 					}
 					change_trade_goods = silk
 					add_province_modifier = {
-						name = iochand_dragon_coast_silk
+						name = iochand_dragon_coast_silk_1
 						duration = -1
 					}
 				}
@@ -930,6 +930,7 @@ iochand_3 = {
 		trigger = {  
 			custom_trigger_tooltip = {
 				tooltip = iochand_artificer_academy_trigger_tt
+				set_country_flag = portnamm_academy_1
 				126 = {
 					development = 35
 					has_production_building_trigger = yes
@@ -1334,12 +1335,13 @@ iochand_4 = {
 		trigger = {  
 			trade_goods_produced_amount = {
 				trade_goods = silk
-				amount = 50
+				amount = 30
 			}
 		} 
 
 		effect = {  
-			custom_tooltip = iochand_unlocked_advanced_silk_production_invention_tt
+			custom_tooltip = iochand_unlocked_artifice_invention_advanced_silk_production_tt
+			set_country_flag = unlocked_artifice_invention_advanced_silk_production
 
 		} 
 	}
@@ -1499,7 +1501,7 @@ iochand_5 = {
 					limit = {
 						has_trade_building_trigger = yes
 						num_of_times_improved = 5
-						region = dragon_coast_region
+						region = lencenor_region
 					}
 					add_province_modifier = {
 						name = iochand_lencenor_new_trade
@@ -1615,7 +1617,7 @@ iochand_5 = {
 				capital_scope = {
 					change_trade_goods = silk
 					add_province_modifier = {
-						name = iochand_dragon_coast_silk
+						name = iochand_dragon_coast_silk_1
 						duration = -1
 					}
 				}
@@ -1624,14 +1626,14 @@ iochand_5 = {
 				sorncost_vines_area = {
 					change_trade_goods = silk
 					add_province_modifier = {
-						name = iochand_dragon_coast_silk
+						name = iochand_dragon_coast_silk_1
 						duration = -1
 					}
 				}
 				shrouded_coast_area = {
 					change_trade_goods = silk
 					add_province_modifier = {
-						name = iochand_dragon_coast_silk
+						name = iochand_dragon_coast_silk_1
 						duration = -1
 					}
 				}
