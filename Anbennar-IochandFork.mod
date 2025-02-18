@@ -1,4 +1,4 @@
-name="Anbennar-Iochand"
+name="Anbennar-IochandFork"
 tags={
 	"Alternative History"
 	"Total Conversion"
@@ -32,4 +32,4 @@ dependencies={
 	"Anbennar-PublicFork"
 }
 supported_version="v1.37.5.0"
-path="C:/Users/Mäxi/Documents/Paradox Interactive/Europa Universalis IV/mod/Anbennar-IochandFork"
+path="C:/Users/jackh/Documents/Paradox Interactive/Europa Universalis IV/mod/Anbennar-IochandFork"
