@@ -3,8 +3,7 @@ iochand_overlord = {
 }
 
 iochand_dragon_coast_reclaimed = {
-	diplomatic_reputation = 3
-	diplomatic_annexation_cost = -0.25
+	diplomatic_reputation = 1
 }
 dragonspine_mining = {
 	trade_goods_size_modifier = 0.25
@@ -67,9 +66,48 @@ iochand_supramecy_over_small_country = {
 	governing_capacity_modifier = 0.15
 }
 iochand_starting_disaster = {
-    global_tax_modifier = -0.15
+    global_tax_modifier = -0.25
     land_maintenance_modifier = 0.1
-    production_efficiency = -0.15
-    trade_efficiency = -0.15
+    production_efficiency = -0.25
+    trade_efficiency = -0.25
     land_morale = -0.1
+}
+iochand_remove_artificer_units = {
+	special_unit_forcelimit = -1
+}
+iochand_gnomish_human_unionocracy = {
+	num_accepted_cultures = 1
+}
+tadlouds_veteran_camp_1 = {
+	global_manpower_modifier = -0.1
+}
+tadlouds_veteran_camp_2 = {
+	global_manpower_modifier = -0.2
+}
+tadlouds_veteran_camp_3 = {
+	global_manpower_modifier = -0.3
+}
+tadlouds_veteran_camp_3 = {
+	global_manpower_modifier = -0.3
+}
+tadlouds_veteran_camp_4 = {
+	global_manpower_modifier = -0.4
+}
+tadlouds_veteran_camp_5 = {
+	global_manpower_modifier = -0.5
+}
+tadlouds_veteran_camp_6 = {
+	global_manpower_modifier = -0.6
+}
+iochand_westport_united_reward = {
+	merc_leader_army_tradition = 0.20
+}
+iochand_refill_cooldown = {
+
+}
+iochand_damestear_loom_engine = {
+	trade_goods_size_modifier = 0.25
+}
+artifice_advanced_silk_production = {
+	trade_goods_size_modifier = 0.25
 }

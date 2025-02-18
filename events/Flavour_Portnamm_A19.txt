@@ -1,47 +1,49 @@
 country_event = {
-	id = flavor_portnamm.1
-	title = portnamm.1.t 
-	desc = portnamm.1.d
-	picture = BATTLE_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = { #Declare Reveria and call in Nimscodd
-		name = flavor_portnamm.1.a
-		ai_chance = { factor = 100 }
-		
-		A06 = {
-			country_event = {
-				id = flavor_portnamm.2
-			}
-			days = 1
-		}
-		add_dip_power = -50
+    id = portnamm.10
+    title = portnamm.10.t
+    desc = portnamm.10.d
+    picture = CIVIL_WAR_eventPicture
 
-	}
-	option = { #No help needed
-		name = flavor_portnamm.1.b
-		ai_chance = { factor = 0 }	
-		
-		
-	}
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = { 
+        name = "portnamm.10.a"
+		custom_tooltip = reveria_invaded_iochand_tt
+		hidden_effect = {
+			A05 = { 
+				country_event = {
+					id = portnamm.11
+				}
+			}
+		}
+    }
 }
 country_event = {
-	id = flavor_portnamm.2
-	title = flavor_portnamm.1.t 
-	desc = flavor_portnamm.1.d
-	picture = BATTLE_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = { #Nimscodd joins the war
-		name = flavor_portnamm.2.a
-		join_all_offensive_wars_of = A19
-		create_alliance = A19
+    id = portnamm.11
+    title = portnamm.11.t
+    desc = portnamm.11.d
+    picture = CIVIL_WAR_eventPicture
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = { 
+        name = "portnamm.11.a"
+		ai_chance = { factor = 100 }	
+		every_country = {
+			limit = {
+				religion = regent_court
+			}
+			add_opinion = {
+				who = root
+				modifier = scornfully_insulted
+			}
+		}
 	}
-	option = { #Nimscodd doesnt join the war
-		name = flavor_portnamm.2.b
-		ai_chance = { factor = 0 }	
-		
-	}
+	option = { 
+        name = "portnamm.11.b"
+		ai_chance = { factor = 0 }
+		add_prestige = -25
+    }
 }

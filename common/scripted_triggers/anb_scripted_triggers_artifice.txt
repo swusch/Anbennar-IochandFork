@@ -118,6 +118,7 @@ has_active_all_economic_tier_2_inventions = {
 	has_estate_privilege = artifice_invention_city_maintenance_bots
 	has_estate_privilege = artifice_invention_artificial_egg_surrogates
 	has_estate_privilege = artifice_invention_subterrenes
+	has_estate_privilege = artifice_invention_advanced_silk_production
 }
 
 has_active_all_military_tier_2_inventions = {
@@ -415,6 +416,7 @@ num_artifice_inventions_discovered = {
 		has_country_flag = unlocked_artifice_invention_iochand_merc_1
 		has_country_flag = unlocked_artifice_invention_iochand_merc_2
 		has_country_flag = unlocked_artifice_invention_iochand_merc_3
+		has_country_flag = unlocked_artifice_invention_advanced_silk_production
 		has_country_flag = unlocked_artifice_invention_spirit_proof_exoskeleton
 		has_country_flag = asra_model_golem_unlocked
 		has_country_flag = unlocked_artifice_invention_honsai_reinforced_cannons
@@ -533,6 +535,7 @@ has_discovered_all_economic_tier_2_inventions = {
 	has_country_flag = unlocked_artifice_invention_city_maintenance_bots
 	has_country_flag = unlocked_artifice_invention_artificial_egg_surrogates
 	has_country_flag = unlocked_artifice_invention_subterrenes
+	has_country_flag = unlocked_artifice_invention_advanced_silk_production
 }
 
 has_discovered_all_military_tier_2_inventions = {

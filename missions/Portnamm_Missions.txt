@@ -25,6 +25,9 @@ portnamm_2 = {
 		}
 
 		effect = { 
+			country_event = {
+				id = portnamm.10
+			}
 			iochand_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -40,10 +43,14 @@ portnamm_2 = {
 				add_permanent_claim = ROOT
 			}
 			add_country_modifier = {
+				name = tadlouds_veteran_camp_1
+				duration = -1
+			}
+			add_country_modifier = {
 				name = thriving_arms_industry
 				duration = 3650
 			}
-
+			
 		} 
 	}
 }
@@ -95,6 +102,7 @@ portnamm_3 = {
 				owned_by = ROOT
 				is_core = ROOT
 			}
+			is_at_war = no
 		} 
 
 		effect = {  
@@ -106,6 +114,29 @@ portnamm_3 = {
 				}
 				set_government_rank = 2
 			}
+			clear_racial_military = yes
+			tooltip = {
+				add_country_modifier = {
+					name = human_military
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				add_country_modifier = { 
+					name = human_military
+					duration = -1  
+					hidden = yes
+				}
+			}
+			add_country_modifier = { 
+				name = restructuring_military
+				duration = 3650
+			}
+			remove_country_modifier = tadlouds_veteran_camp_1
+			add_country_modifier = {
+				name = tadlouds_veteran_camp_2
+				duration = -1
+			}
 			add_prestige = 25
 			swap_non_generic_missions = yes
 			hidden_effect = {
@@ -113,12 +144,23 @@ portnamm_3 = {
 					name = "centralization_modifier"
 					duration = 7300
 				}
+
+				country_event = {
+					id = iochand.101
+					days = 3
+				}
+
 				141 = { change_culture = root }
 				142 = { change_culture = iochander }
 				143 = { change_culture = iochander }
-				country_event = {
-					id = iochand.100
-					days = 3
+				
+				add_accepted_culture_or_dip_power = {
+					culture = iochander
+				}
+
+				add_country_modifier = {
+					name = iochand_gnomish_human_unionocracy
+					duration = -1
 				}
 			}
 		}

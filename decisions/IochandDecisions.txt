@@ -2,14 +2,21 @@ country_decisions = {
 	refill_tadlouds_decision = {
 		
 		potential = {
-			tag = A80
+			AND = {
+				tag = A80
+				NOT = {
+					has_country_modifier = iochand_refill_cooldown
+				}
+			}
 		}
 	
 		allow = {
 			hidden_trigger = {
-				OR = {
-					tag = A19
+				AND = {
 					tag = A80
+					NOT = {
+						has_country_modifier = iochand_refill_cooldown
+					}
 				}
 			}
 			years_of_manpower = 1
@@ -17,16 +24,33 @@ country_decisions = {
 				any_hired_mercenary_company = { template = merc_tadlouds_1 }
 				any_hired_mercenary_company = { template = merc_tadlouds_2 }
 				any_hired_mercenary_company = { template = merc_tadlouds_3 }
+				any_hired_mercenary_company = { template = merc_tadlouds_3_reserve }
 			}
 		}
 		effect = {
 			if = {
-				limit = {any_hired_mercenary_company = { template = merc_tadlouds_3 }}
+				limit = {	
+					OR = {
+						any_hired_mercenary_company = { template = merc_tadlouds_3 }
+						any_hired_mercenary_company = { template = merc_tadlouds_3_reserve }
+					}
+				}
 				random_hired_mercenary_company = {
 					template = { template = merc_tadlouds_3 }
 					add_company_manpower = 0.15
 				}
+				random_hired_mercenary_company = {
+					template = { template = merc_tadlouds_3_reserve }
+					add_company_manpower = 0.15
+				}
 				add_yearly_manpower = -1
+				hidden_effect = {
+					add_country_modifier = {
+						name = iochand_refill_cooldown
+						duration = 180
+						hidden = yes
+					}
+				}
 			}
 			else_if = {
 				limit = {any_hired_mercenary_company = { template = merc_tadlouds_2 }}
@@ -35,6 +59,13 @@ country_decisions = {
 					add_company_manpower = 0.15
 				}
 				add_yearly_manpower = -1
+				hidden_effect = {
+					add_country_modifier = {
+						name = iochand_refill_cooldown
+						duration = 180
+						hidden = yes
+					}
+				}
 			}
 			else_if = {
 				limit = {any_hired_mercenary_company = { template = merc_tadlouds_1 }}
@@ -43,6 +74,13 @@ country_decisions = {
 					add_company_manpower = 0.15
 				}
 				add_yearly_manpower = -1
+				hidden_effect = {
+					add_country_modifier = {
+						name = iochand_refill_cooldown
+						duration = 180
+						hidden = yes
+					}
+				}
 			}
 
 		}
@@ -54,15 +92,15 @@ country_decisions = {
 			has_country_flag = portnamm_academy_1
 		}
 		allow = {
-			adm_power = 100
-			dip_power = 100
-			mil_power = 100
+			adm_power = 50
+			dip_power = 50
+			mil_power = 50
 			mil_tech = 6
 		}
 		effect = {
-			add_adm_power = -100
-			add_dip_power = -100
-			add_mil_power = -100
+			add_adm_power = -50
+			add_dip_power = -50
+			add_mil_power = -50
 			random_hired_mercenary_company = {
 				limit = { template = merc_artificer_1_1 }
 				disband_mercenary_company = THIS
@@ -78,22 +116,23 @@ country_decisions = {
 			has_country_flag = portnamm_academy_2
 		}
 		allow = {
-			adm_power = 125
-			dip_power = 125
-			mil_power = 125
-			mil_tech = 11
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
+			mil_tech = 9
 		}
 		effect = {
-			add_adm_power = -125
-			add_dip_power = -125
-			add_mil_power = -125
+			add_adm_power = -100
+			add_dip_power = -100
+			add_mil_power = -100
 			random_hired_mercenary_company = {
 				limit = { template = merc_artificer_2_1 }
 				disband_mercenary_company = THIS
 			}
-			random_hired_mercenary_company = {
-				limit = { template = merc_artificer_2_2 }
-				disband_mercenary_company = THIS
+			remove_country_modifier = tadlouds_veteran_camp_2
+			add_country_modifier = {
+				name = tadlouds_veteran_camp_3
+				duration = -1
 			}
 			clr_country_flag = portnamm_academy_2
 			set_country_flag = portnamm_academy_3
@@ -106,15 +145,15 @@ country_decisions = {
 			has_country_flag = portnamm_academy_3
 		}
 		allow = {
-			adm_power = 150
-			dip_power = 150
-			mil_power = 150
-			mil_tech = 16
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
+			mil_tech = 12
 		}
 		effect = {
-			add_adm_power = -150
-			add_dip_power = -150
-			add_mil_power = -150
+			add_adm_power = -100
+			add_dip_power = -100
+			add_mil_power = -100
 			random_hired_mercenary_company = {
 				template ={ template = merc_artificer_3_1 }
 				disband_mercenary_company = THIS
@@ -123,9 +162,10 @@ country_decisions = {
 				template ={ template = merc_artificer_3_3 }
 				disband_mercenary_company = THIS
 			}
-			random_hired_mercenary_company = {
-				template ={ template = merc_artificer_3_3 }
-				disband_mercenary_company = THIS
+			remove_country_modifier = tadlouds_veteran_camp_3
+			add_country_modifier = {
+				name = tadlouds_veteran_camp_4
+				duration = -1
 			}
 			clr_country_flag = portnamm_academy_3
 			set_country_flag = portnamm_academy_4
@@ -138,15 +178,15 @@ country_decisions = {
 			has_country_flag = portnamm_academy_4
 		}
 		allow = {
-			adm_power = 175
-			dip_power = 175
-			mil_power = 175
-			mil_tech = 18
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
+			mil_tech = 15
 		}
 		effect = {
-			add_adm_power = -175
-			add_dip_power = -175
-			add_mil_power = -175
+			add_adm_power = -100
+			add_dip_power = -100
+			add_mil_power = -100
 			random_hired_mercenary_company = {
 				template ={ template = merc_artificer_4_1 }
 				disband_mercenary_company = THIS
@@ -159,9 +199,10 @@ country_decisions = {
 				template ={ template = merc_artificer_4_3 }
 				disband_mercenary_company = THIS
 			}
-			random_hired_mercenary_company = {
-				template ={ template = merc_artificer_4_4 }
-				disband_mercenary_company = THIS
+			remove_country_modifier = tadlouds_veteran_camp_4
+			add_country_modifier = {
+				name = tadlouds_veteran_camp_5
+				duration = -1
 			}
 			clr_country_flag = portnamm_academy_4
 			set_country_flag = portnamm_academy_5
@@ -174,15 +215,15 @@ country_decisions = {
 			has_country_flag = portnamm_academy_5
 		}
 		allow = {
-			adm_power = 200
-			dip_power = 200
-			mil_power = 200
-			mil_tech = 20
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
+			mil_tech = 18
 		}
 		effect = {
-			add_adm_power = -200
-			add_dip_power = -200
-			add_mil_power = -200
+			add_adm_power = -100
+			add_dip_power = -100
+			add_mil_power = -100
 			random_hired_mercenary_company = {
 				template ={ template = merc_artificer_5_1 }
 				disband_mercenary_company = THIS
@@ -199,9 +240,10 @@ country_decisions = {
 				template ={ template = merc_artificer_5_4 }
 				disband_mercenary_company = THIS
 			}
-			random_hired_mercenary_company = {
-				template ={ template = merc_artificer_5_5 }
-				disband_mercenary_company = THIS
+			remove_country_modifier = tadlouds_veteran_camp_5
+			add_country_modifier = {
+				name = tadlouds_veteran_camp_6
+				duration = -1
 			}
 			clr_country_flag = portnamm_academy_5
 			set_country_flag = portnamm_academy_6
@@ -214,15 +256,15 @@ country_decisions = {
 			has_country_flag = portnamm_academy_5
 		}
 		allow = {
-			adm_power = 250
-			dip_power = 250
-			mil_power = 250
-			mil_tech = 22
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
+			mil_tech = 21
 		}
 		effect = {
-			add_adm_power = -250
-			add_dip_power = -250
-			add_mil_power = -250
+			add_adm_power = -100
+			add_dip_power = -100
+			add_mil_power = -100
 			random_hired_mercenary_company = {
 				template ={ template = merc_artificer_6_1 }
 				disband_mercenary_company = THIS
@@ -241,10 +283,6 @@ country_decisions = {
 			}
 			random_hired_mercenary_company = {
 				template ={ template = merc_artificer_6_5 }
-				disband_mercenary_company = THIS
-			}
-			random_hired_mercenary_company = {
-				template ={ template = merc_artificer_6_6 }
 				disband_mercenary_company = THIS
 			}
 			clr_country_flag = portnamm_academy_5
