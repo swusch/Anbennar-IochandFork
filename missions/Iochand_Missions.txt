@@ -326,7 +326,7 @@ iochand_1 = {
 			179 = {
 				change_trade_goods = gold
 				add_province_modifier = {
-					name = dragonspine_mining
+					name = dragonspine_gold_mining
 					duration = -1
 				}
 			}
@@ -645,7 +645,7 @@ iochand_2 = {
 				capital_scope = {
 					change_trade_goods = silk
 					add_province_modifier = {
-						name = iochand_dragon_coast_silk
+						name = iochand_dragon_coast_silk_1
 						duration = -1
 					}
 				}
@@ -1195,7 +1195,7 @@ iochand_4 = {
 			129 = {
 				change_trade_goods = silk
 				add_province_modifier = {
-					name = iochand_dragon_coast_silk
+					name = iochand_dragon_coast_silk_2
 					duration = -1
 				}
 			}

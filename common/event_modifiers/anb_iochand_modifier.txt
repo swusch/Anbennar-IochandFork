@@ -8,11 +8,21 @@ iochand_dragon_coast_reclaimed = {
 dragonspine_mining = {
 	trade_goods_size_modifier = 0.25
 }
+
+dragonspine_gold_mining = {
+	trade_goods_size_modifier = 0.25
+}
+
 iochand_dragon_coast_grain = {
 	regiment_recruit_speed = -0.25
 	trade_goods_size = 0.5
 }
-iochand_dragon_coast_silk = {
+iochand_dragon_coast_silk_1 = {
+	province_trade_power_modifier = 0.2
+	trade_goods_size_modifier = 0.2
+}
+
+iochand_dragon_coast_silk_2 = {
 	province_trade_power_modifier = 0.2
 	trade_goods_size_modifier = 0.2
 }
