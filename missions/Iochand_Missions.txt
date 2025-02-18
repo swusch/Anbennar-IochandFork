@@ -597,6 +597,9 @@ iochand_2 = {
 					}
 					change_trade_goods = grain
 				}
+				4644 = {
+					change_trade_goods = fungi
+				}
 			}
 		} 
 	}
