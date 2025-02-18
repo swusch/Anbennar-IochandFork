@@ -840,11 +840,14 @@ iochand_3 = {
 		} 
 
 		trigger = {  
-			126 = {
-				development = 25
-				has_tax_building_trigger = yes
-				has_trade_building_trigger = yes
-				num_of_times_expanded_infrastructure = 1
+			custom_trigger_tooltip = {
+				tooltip = iochand_resurgence_of_the_past_trigger_tt
+				126 = {
+					development = 25
+					has_tax_building_trigger = yes
+					has_trade_building_trigger = yes
+					num_of_times_expanded_infrastructure = 1
+				}
 			}
 		} 
 
@@ -873,9 +876,12 @@ iochand_3 = {
 		} 
 
 		trigger = {  
-			126 = {
-				development = 30
-				num_of_times_expanded_infrastructure = 2
+			custom_trigger_tooltip = {
+				tooltip = iochand_rebuilding_nimsomms_trigger_tt
+				126 = {
+					development = 30
+					num_of_times_expanded_infrastructure = 2
+				}
 			}
 			treasury = 200
 		} 
@@ -906,10 +912,13 @@ iochand_3 = {
 		} 
 
 		trigger = {  
-			126 = {
-				development = 35
-				has_production_building_trigger = yes
-				has_manpower_building_trigger = yes
+			custom_trigger_tooltip = {
+				tooltip = iochand_artificer_academy_trigger_tt
+				126 = {
+					development = 35
+					has_production_building_trigger = yes
+					has_manpower_building_trigger = yes
+				}
 			}
 			is_at_war = no
 		} 
@@ -951,14 +960,21 @@ iochand_3 = {
 		} 
 
 		trigger = {  
-			126 = {
-				owned_by = ROOT
-				development = 40
-				has_tax_building_trigger = yes
-				has_production_building_trigger = yes
-				has_manpower_building_trigger = yes
-				custom_trigger_tooltip = {
-					tooltip = iochand_most_developed_city_in_the_world
+			
+			custom_trigger_tooltip = {
+				tooltip = iochand_jewel_on_the_westcoast_trigger_1_tt
+				126 = {
+					owned_by = ROOT
+					development = 40
+					has_tax_building_trigger = yes
+					has_production_building_trigger = yes
+					has_manpower_building_trigger = yes
+				}
+			}
+				
+			custom_trigger_tooltip = {
+				tooltip = iochand_most_developed_city_in_the_world
+				126 = {
 					NOT = {
 						any_province = {
 							has_terrain = city_terrain
@@ -1184,9 +1200,12 @@ iochand_4 = {
 		} 
 
 		trigger = {  
-			129 = {
-				num_of_times_improved = 7
-				has_production_building_trigger = yes
+			custom_trigger_tooltip = {
+				tooltip = iochand_secure_costumes_trigger_tt
+				129 = {
+					num_of_times_improved = 7
+					has_production_building_trigger = yes
+				}
 			}
 		} 
 

@@ -134,3 +134,8 @@ iochand_borders_restored_trigger_tt:0 "All provinces in the §YSouthroy§! area 
 iochand_restoring_our_heartlands_trigger_tt:0 "All provinces in §YIochand§! area have been improved by §Y2§! or more §YDevelopment§!."
 iochand_exploit_baycodds_trigger_tt:0 "§YBaycodds§! must contain a §YWorkshop§! and have a §YBase Production§! of §Y8§!."
 iochand_crushing_reavers_trigger_tt:0 "All provinces in the §YReaver Coast§! area are owned cores of §YIochand§!."
+iochand_secure_costumes_trigger_tt:0 "§YOoldergroon§! must contain a §YWorkshop§! and have been improved by §Y7§! or more §YDevelopment§!."
+iochand_resurgence_of_the_past_trigger_tt:0 "§YPortnamm§! must contain a §YChurch§!, a §YMarketplace§!, has its §YInfrastructure§! expandedand and §Y25§! or more §YTotal Development§!."
+iochand_rebuilding_nimsomms_trigger_tt:0 "§YPortnamm§! must have its §YInfrastructure§! expandedand twice and §Y30§! or more §YTotal Development§!."
+iochand_artificer_academy_trigger_tt:0 "§YPortnamm§! must contain a §YWorkshop§!, a §YBaracks§! and §Y35§! or more §YTotal Development§!."
+iochand_jewel_on_the_westcoast_trigger_1_tt:0 "§YPortnamm§! must contain a §YChurch§!, a §YWorkshop§!, a §YBaracks§! and §Y40§! or more §YTotal Development§!."
