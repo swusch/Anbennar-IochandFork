@@ -395,6 +395,7 @@ iochand_1 = {
 			custom_tooltip = iochand_unlock_tadlouds_t3_tt 
 			set_country_flag = unlocked_merc_tadlouds_3
 			mission_reward_artifice_points_5 = yes
+			custom_tooltip = iochand_space_tt
 			custom_tooltip = iochand_dragon_coast_grain_effect_tt
 			tooltip = {
 				capital_scope = {
@@ -791,6 +792,7 @@ iochand_2 = {
 
 		effect = {  
 			mission_reward_artifice_points_5 = yes
+			custom_tooltip = iochand_space_tt
 			add_country_modifier = {
 				name = iochand_supramecy_over_small_country
 				duration = -1
@@ -942,7 +944,7 @@ iochand_3 = {
 		effect = {
 			custom_tooltip = unlocked_merc_tadlouds_2_tt
 			custom_tooltip = iochand_portnamm_academy_tt
-			
+
 			add_country_modifier = {
 				name = iochand_remove_artificer_units
 				duration = -1
