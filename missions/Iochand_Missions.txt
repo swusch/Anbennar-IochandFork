@@ -930,7 +930,6 @@ iochand_3 = {
 		trigger = {  
 			custom_trigger_tooltip = {
 				tooltip = iochand_artificer_academy_trigger_tt
-				set_country_flag = portnamm_academy_1
 				126 = {
 					development = 35
 					has_production_building_trigger = yes
@@ -941,21 +940,21 @@ iochand_3 = {
 		} 
 
 		effect = {
-			country_event = {
-				id = iochand.4
-				days = 5475
-			}
+			custom_tooltip = unlocked_merc_tadlouds_2_tt
+			custom_tooltip = iochand_portnamm_academy_tt
+			
 			add_country_modifier = {
 				name = iochand_remove_artificer_units
 				duration = -1
 			}
-			custom_tooltip = unlocked_merc_tadlouds_2_tt
+			
 			hidden_effect = {
 				random_hired_mercenary_company = {
 					template ={ template = merc_tadlouds_1 }
 					disband_mercenary_company = THIS
 				}
 				set_country_flag = unlocked_merc_tadlouds_2
+				set_country_flag = portnamm_academy_1
 			}
 		} 
 	}
