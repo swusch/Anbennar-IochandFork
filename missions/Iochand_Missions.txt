@@ -462,10 +462,13 @@ iochand_2 = {
 		} 
 
 		trigger = {  
-			reaver_coast_area = {
-				type = all
-				owned_by = ROOT
-				is_core = ROOT
+			custom_trigger_tooltip = {
+				tooltip = iochand_crushing_reavers_trigger_tt
+				reaver_coast_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
 			}
 		} 
 		effect = {  
@@ -488,9 +491,12 @@ iochand_2 = {
 		} 
 
 		trigger = {  
-			146 = {
-				base_production = 8
-				has_building = workshop
+			custom_trigger_tooltip = {
+				tooltip = iochand_exploit_baycodds_trigger_tt
+				146 = {
+					base_production = 8
+					has_building = workshop
+				}
 			}
 		} 
 
@@ -748,21 +754,22 @@ iochand_2 = {
 			A80_inland_trade
 		}
 		provinces_to_highlight = {  
-			custom_trigger_tooltip = {
-				tooltip = iochand_small_country_united_trigger_tt
-				region = small_country_region
-				OR = {
-					NOT = { owned_by = root }
-					NOT = { is_core = root }
-				}
+			region = small_country_region
+			OR = {
+				NOT = { owned_by = root }
+				NOT = { is_core = root }
 			}
-		} 
+		}
+
 
 		trigger = {  
-			small_country_region = {
-				type = all
-				owned_by = root
-				is_core = root
+			custom_trigger_tooltip = {
+				tooltip = iochand_small_country_united_trigger_tt
+				small_country_region = {
+					type = all
+					owned_by = root
+					is_core = root
+				}
 			}
 		} 
 
@@ -797,9 +804,12 @@ iochand_3 = {
 		} 
 
 		trigger = {  
-			iochand_area = {
-				type = all
-				num_of_times_improved = 2
+			custom_trigger_tooltip = {
+				tooltip = iochand_restoring_our_heartlands_trigger_tt
+				iochand_area = {
+					type = all
+					num_of_times_improved = 2
+				}
 			}
 		} 
 
@@ -1313,11 +1323,15 @@ iochand_5 = {
 		} 
 
 		trigger = {  
-			southroy_area = {
-				type = all
-				owned_by = root
-				is_core = root
+			custom_trigger_tooltip = {
+				tooltip = iochand_borders_restored_trigger_tt
+				southroy_area = {
+					type = all
+					owned_by = root
+					is_core = root
+				}
 			}
+			
 			custom_trigger_tooltip = {
 				tooltip = iochand_pushout_kobolds_done_tt
 				has_country_flag = iochand_pushout_kobolds_done
@@ -1368,23 +1382,30 @@ iochand_5 = {
 		} 
 
 		trigger = {  
-			OR = {
-				deranne_area = {
-					type = all
-					owned_by = root
-					is_core = root
-				}
-				redglades_area = {
-					type = all
-					owned_by = root
-					is_core = root
+			custom_trigger_tooltip = {
+				tooltip = iochand_push_into_westport_trigger_1_tt
+				OR = {
+					deranne_area = {
+						type = all
+						owned_by = root
+						is_core = root
+					}
+					redglades_area = {
+						type = all
+						owned_by = root
+						is_core = root
+					}
 				}
 			}
-			any_province = {
-				owned_by = root
-				region = lencenor_region
-				province_has_center_of_trade_of_level = 2
+			custom_trigger_tooltip = {
+				tooltip = iochand_push_into_westport_trigger_2_tt
+				any_province = {
+					owned_by = root
+					region = lencenor_region
+					province_has_center_of_trade_of_level = 2
+				}
 			}
+			
 		} 
 
 		effect = {  
@@ -1455,8 +1476,15 @@ iochand_5 = {
 		provinces_to_highlight = {  } 
 
 		trigger = {  
-			126 = { is_strongest_trade_power = root }
-			112 = { is_strongest_trade_power = root }
+			custom_trigger_tooltip = {
+				tooltip = iochand_trade_monopoly_trigger_1_tt
+				126 = { is_strongest_trade_power = root }
+			}
+			custom_trigger_tooltip = {
+				tooltip = iochand_trade_monopoly_trigger_2_tt
+				112 = { is_strongest_trade_power = root }
+			}
+
 		} 
 
 		effect = {  
